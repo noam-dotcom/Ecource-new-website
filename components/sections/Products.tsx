@@ -1,16 +1,29 @@
 "use client";
 
+import Image from "next/image";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const COLORS = [
-  { color: "from-blue-500/20 to-blue-900/10", border: "border-blue-500/20" },
-  { color: "from-gold-500/20 to-gold-900/10", border: "border-gold-500/30" },
-  { color: "from-green-500/20 to-green-900/10", border: "border-green-500/20" },
-  { color: "from-purple-500/20 to-purple-900/10", border: "border-purple-500/20" },
-  { color: "from-teal-500/20 to-teal-900/10", border: "border-teal-500/20" },
-  { color: "from-orange-500/20 to-orange-900/10", border: "border-orange-500/20" },
-  { color: "from-cyan-500/20 to-cyan-900/10", border: "border-cyan-500/20" },
-  { color: "from-rose-500/20 to-rose-900/10", border: "border-rose-500/20" },
+  { border: "border-blue-500/30",   accent: "text-blue-400"   },
+  { border: "border-gold-500/40",   accent: "text-gold-400"   },
+  { border: "border-green-500/30",  accent: "text-green-400"  },
+  { border: "border-purple-500/30", accent: "text-purple-400" },
+  { border: "border-teal-500/30",   accent: "text-teal-400"   },
+  { border: "border-orange-500/30", accent: "text-orange-400" },
+  { border: "border-cyan-500/30",   accent: "text-cyan-400"   },
+  { border: "border-rose-500/30",   accent: "text-rose-400"   },
+];
+
+// Mapped by index order matching the translations items array
+const PRODUCT_IMAGES = [
+  "/products/product-cutlet.jpg",       // Fish Cutlets
+  "/products/product-burger.jpg",       // Fish Burgers
+  "/products/product-breaded.jpg",      // Breaded Products
+  "/products/product-pasta.jpg",        // Pasta & Noodles
+  "/products/product-paella.jpg",       // Pizza Dough
+  "/products/product-snacks.jpg",       // Snacks
+  "/products/product-rice.jpg",         // Imitation Rice
+  "/products/product-pasta-delmar.jpg", // Gluten-Free Pasta & Pizza
 ];
 
 export default function Products() {
@@ -43,27 +56,48 @@ export default function Products() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {p.items.map((prod, idx) => (
-            <div
-              key={prod.category}
-              className={`bg-gradient-to-br ${COLORS[idx % COLORS.length].color} border ${COLORS[idx % COLORS.length].border} rounded-2xl p-8 hover:-translate-y-1 transition-all duration-300`}
-            >
-              <div className="flex items-start justify-between mb-5">
-                <h3 className="text-white font-black text-xl">{prod.category}</h3>
-                <span className="text-xs font-semibold border border-white/20 text-white/60 px-2.5 py-1 rounded-full">
-                  {prod.tag}
-                </span>
+          {p.items.map((prod, idx) => {
+            const color = COLORS[idx % COLORS.length];
+            const img = PRODUCT_IMAGES[idx];
+            return (
+              <div
+                key={prod.category}
+                className={`group bg-navy-900/70 border ${color.border} rounded-2xl overflow-hidden hover:-translate-y-1 transition-all duration-300`}
+              >
+                {/* Food Photo */}
+                {img && (
+                  <div className="relative w-full h-56 overflow-hidden">
+                    <Image
+                      src={img}
+                      alt={prod.category}
+                      fill
+                      className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                    {/* Bottom fade so text below blends */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-navy-900/80 via-transparent to-transparent" />
+                    {/* Tag badge over image */}
+                    <span className={`absolute top-3 right-3 text-xs font-bold border ${color.border} ${color.accent} bg-navy-900/80 px-2.5 py-1 rounded-full backdrop-blur-sm`}>
+                      {prod.tag}
+                    </span>
+                  </div>
+                )}
+
+                {/* Text content */}
+                <div className="p-6">
+                  <h3 className="text-white font-black text-xl mb-4">{prod.category}</h3>
+                  <ul className="space-y-2">
+                    {prod.items.map((item) => (
+                      <li key={item} className="flex items-start gap-2 text-white/70 text-sm leading-relaxed">
+                        <span className={`mt-1.5 w-1.5 h-1.5 shrink-0 rounded-full ${color.accent.replace("text-", "bg-")}`} />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-              <ul className="space-y-2">
-                {prod.items.map((item) => (
-                  <li key={item} className="flex items-center gap-2 text-white/70 text-sm">
-                    <span className="w-1.5 h-1.5 rounded-full bg-gold-400" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-5">

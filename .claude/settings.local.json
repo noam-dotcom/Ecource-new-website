@@ -4,7 +4,16 @@
       "Bash(npx create-next-app@latest:*)",
       "Bash(npm install:*)",
       "Bash(npm run:*)",
-      "Bash(npx tsc:*)"
+      "Bash(npx tsc:*)",
+      "Bash(python:*)",
+      "Bash(py:*)",
+      "Bash(node -e \"console.log\\(''node ok''\\)\")",
+      "Bash(node -e \":*)",
+      "Bash(magick --version)",
+      "Bash(convert --version)",
+      "Bash(gs --version)",
+      "Bash(powershell -Command \":*)",
+      "Bash(npm list:*)"
     ]
   }
 }
