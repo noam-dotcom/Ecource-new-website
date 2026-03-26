@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 450">
+<defs>
+  <linearGradient id="gA" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#c8941d"/>
+    <stop offset="40%" stop-color="#f5c440"/>
+    <stop offset="70%" stop-color="#e8a820"/>
+    <stop offset="100%" stop-color="#a07010"/>
+  </linearGradient>
+  <linearGradient id="gB" x1="0%" y1="100%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#a07010"/>
+    <stop offset="50%" stop-color="#f5c440"/>
+    <stop offset="100%" stop-color="#c8941d"/>
+  </linearGradient>
+  <clipPath id="hc">
+    <polygon points="359.512,86.000 240.000,17.000 120.488,86.000 120.488,224.000 240.000,293.000 359.512,224.000"/>
+  </clipPath>
+  <pattern id="hp" patternUnits="userSpaceOnUse" width="13" height="13">
+    <line x1="0" y1="13" x2="13" y2="0" stroke="#c8941d" stroke-width="1.6" opacity="0.55"/>
+    <line x1="-6" y1="6" x2="6" y2="-6" stroke="#c8941d" stroke-width="1.6" opacity="0.55"/>
+    <line x1="6" y1="19" x2="19" y2="6" stroke="#c8941d" stroke-width="1.6" opacity="0.55"/>
+  </pattern>
+</defs>
+<polygon points="359.512,86.000 240.000,17.000 120.488,86.000 120.488,224.000 240.000,293.000 359.512,224.000" fill="url(#hp)" clip-path="url(#hc)"/>
+<polygon points="359.512,86.000 240.000,17.000 120.488,86.000 120.488,224.000 240.000,293.000 359.512,224.000" fill="none" stroke="url(#gA)" stroke-width="3.2" clip-path="url(#hc)"/>
+<polygon points="345.915,93.850 240.000,32.700 134.085,93.850 134.085,216.150 240.000,277.300 345.915,216.150" fill="none" stroke="url(#gA)" stroke-width="2.4" clip-path="url(#hc)"/>
+<polygon points="332.318,101.700 240.000,48.400 147.682,101.700 147.682,208.300 240.000,261.600 332.318,208.300" fill="none" stroke="url(#gA)" stroke-width="2.4" clip-path="url(#hc)"/>
+<polygon points="318.722,109.550 240.000,64.100 161.278,109.550 161.278,200.450 240.000,245.900 318.722,200.450" fill="none" stroke="url(#gA)" stroke-width="2.4" clip-path="url(#hc)"/>
+<polygon points="305.125,117.400 240.000,79.800 174.875,117.400 174.875,192.600 240.000,230.200 305.125,192.600" fill="none" stroke="url(#gA)" stroke-width="2.4" clip-path="url(#hc)"/>
+<polygon points="291.529,125.250 240.000,95.500 188.471,125.250 188.471,184.750 240.000,214.500 291.529,184.750" fill="none" stroke="url(#gA)" stroke-width="2.4" clip-path="url(#hc)"/>
+<polygon points="277.932,133.100 240.000,111.200 202.068,133.100 202.068,176.900 240.000,198.800 277.932,176.900" fill="none" stroke="url(#gA)" stroke-width="2.4" clip-path="url(#hc)"/>
+<polygon points="264.335,140.950 240.000,126.900 215.665,140.950 215.665,169.050 240.000,183.100 264.335,169.050" fill="none" stroke="url(#gA)" stroke-width="2.4" clip-path="url(#hc)"/>
+<polygon points="250.739,148.800 240.000,142.600 229.261,148.800 229.261,161.200 240.000,167.400 250.739,161.200" fill="none" stroke="url(#gA)" stroke-width="2.4" clip-path="url(#hc)"/>
+<text x="58.83" y="375" 
+  font-family="'Arial Black','Helvetica Neue',sans-serif" 
+  font-size="76" font-weight="900" fill="url(#gB)"
+  text-anchor="start" letter-spacing="5" textLength="260.39" lengthAdjust="spacingAndGlyphs">ECOUR</text>
+<text x="372.91" y="375" 
+  font-family="'Arial Black','Helvetica Neue',sans-serif" 
+  font-size="76" font-weight="900" fill="url(#gB)"
+  text-anchor="start" letter-spacing="0">E</text>
+<path d="M 367.41,323.36 A 27.09,27.09 0 1 0 367.41,356.72 L 358.46,349.73 A 15.73,15.73 0 1 1 358.46,330.35 Z" fill="url(#gA)"/>
+<path d="M 367.41,323.36 L 373.50,314.00 L 369.50,340.04 L 373.50,366.08 L 367.41,356.72 Z" fill="url(#gA)"/>
+<circle cx="334.68" cy="337.33" r="2.8" fill="#0c1a2e"/>
+<text x="240" y="413" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#c8941d" text-anchor="middle" letter-spacing="3.5" font-weight="400">Our Economical &amp; Ecological Source</text>
+</svg>

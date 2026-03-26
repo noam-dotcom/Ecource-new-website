@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 90">
+<defs>
+  <linearGradient id="gw" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#c8941d"/>
+    <stop offset="35%" stop-color="#f5c440"/>
+    <stop offset="65%" stop-color="#e8a820"/>
+    <stop offset="100%" stop-color="#a07010"/>
+  </linearGradient>
+</defs>
+<text x="66.42" y="75" font-family="'Arial Black','Helvetica Neue',sans-serif" font-size="72" font-weight="900" fill="url(#gw)" text-anchor="start">E</text>
+<text x="117.50" y="75" font-family="'Arial Black','Helvetica Neue',sans-serif" font-size="72" font-weight="900" fill="url(#gw)" text-anchor="start">C</text>
+<path d="M 123.5,49.1 C 123.5,38.7 139.4,38.7 145.4,49.1 C 139.4,59.4 123.5,59.4 123.5,49.1 Z" fill="#08111e"/>
+<path d="M 145.4,49.1 L 154.3,37.7 L 148.5,49.1 L 154.3,60.5 Z" fill="#08111e"/>
+<path d="M 132.4,38.7 Q 135.8,34.1 139.2,38.7 Z" fill="#08111e"/>
+<circle cx="131.1" cy="46.8" r="2.2" fill="#f5c440"/>
+<text x="163.90" y="75" font-family="'Arial Black','Helvetica Neue',sans-serif" font-size="72" font-weight="900" fill="url(#gw)" text-anchor="start">O</text>
+<text x="219.30" y="75" font-family="'Arial Black','Helvetica Neue',sans-serif" font-size="72" font-weight="900" fill="url(#gw)" text-anchor="start">U</text>
+<text x="271.82" y="75" font-family="'Arial Black','Helvetica Neue',sans-serif" font-size="72" font-weight="900" fill="url(#gw)" text-anchor="start">R</text>
+<text x="321.10" y="75" font-family="'Arial Black','Helvetica Neue',sans-serif" font-size="72" font-weight="900" fill="url(#gw)" text-anchor="start" transform="matrix(-1,0,0,1,683.60,0)">C</text>
+<text x="367.50" y="75" font-family="'Arial Black','Helvetica Neue',sans-serif" font-size="72" font-weight="900" fill="url(#gw)" text-anchor="start" transform="matrix(-1,0,0,1,781.08,0)">E</text>
+</svg>

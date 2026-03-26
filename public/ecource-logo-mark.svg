@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+<defs>
+  <linearGradient id="mgA" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%"   stop-color="#c8941d"/>
+    <stop offset="40%"  stop-color="#f5c440"/>
+    <stop offset="70%"  stop-color="#e8a820"/>
+    <stop offset="100%" stop-color="#a07010"/>
+  </linearGradient>
+  <clipPath id="mhc">
+    <polygon points="100.000,12.440 175.829,56.220 175.829,143.780 100.000,187.560 24.171,143.780 24.171,56.220"/>
+  </clipPath>
+  <pattern id="mhp" patternUnits="userSpaceOnUse" width="11" height="11">
+    <line x1="0"  y1="11" x2="11" y2="0"  stroke="#c8941d" stroke-width="1.4" opacity="0.55"/>
+    <line x1="-5" y1="5"  x2="5"  y2="-5" stroke="#c8941d" stroke-width="1.4" opacity="0.55"/>
+    <line x1="5"  y1="16" x2="16" y2="5"  stroke="#c8941d" stroke-width="1.4" opacity="0.55"/>
+  </pattern>
+</defs>
+<polygon points="100.000,12.000 176.210,56.000 176.210,144.000 100.000,188.000 23.790,144.000 23.790,56.000" fill="url(#mhp)" clip-path="url(#mhc)"/>
+<polygon points="100.000,12.000 176.210,56.000 176.210,144.000 100.000,188.000 23.790,144.000 23.790,56.000" fill="none" stroke="url(#mgA)" stroke-width="2.8" clip-path="url(#mhc)"/>
+<polygon points="100.000,23.282 166.440,61.641 166.440,138.359 100.000,176.718 33.560,138.359 33.560,61.641" fill="none" stroke="url(#mgA)" stroke-width="2.0" clip-path="url(#mhc)"/>
+<polygon points="100.000,34.564 156.669,67.282 156.669,132.718 100.000,165.436 43.331,132.718 43.331,67.282" fill="none" stroke="url(#mgA)" stroke-width="2.0" clip-path="url(#mhc)"/>
+<polygon points="100.000,45.846 146.899,72.923 146.899,127.077 100.000,154.154 53.101,127.077 53.101,72.923" fill="none" stroke="url(#mgA)" stroke-width="2.0" clip-path="url(#mhc)"/>
+<polygon points="100.000,57.128 137.128,78.564 137.128,121.436 100.000,142.872 62.872,121.436 62.872,78.564" fill="none" stroke="url(#mgA)" stroke-width="2.0" clip-path="url(#mhc)"/>
+<polygon points="100.000,68.410 127.358,84.205 127.358,115.795 100.000,131.590 72.642,115.795 72.642,84.205" fill="none" stroke="url(#mgA)" stroke-width="2.0" clip-path="url(#mhc)"/>
+<polygon points="100.000,79.692 117.587,89.846 117.587,110.154 100.000,120.308 82.413,110.154 82.413,89.846" fill="none" stroke="url(#mgA)" stroke-width="2.0" clip-path="url(#mhc)"/>
+<polygon points="100.000,90.974 107.816,95.487 107.816,104.513 100.000,109.026 92.184,104.513 92.184,95.487" fill="none" stroke="url(#mgA)" stroke-width="2.0" clip-path="url(#mhc)"/>
+</svg>
