@@ -32,12 +32,18 @@ export default function Team() {
               </div>
               <h3 className="text-white font-bold text-lg mb-0.5">{member.name}</h3>
               <p className="text-gold-400 text-sm font-medium mb-4">{member.role}</p>
-              <p className="text-white/55 text-sm leading-relaxed">{member.bio}</p>
+              <p className="text-white/55 text-sm leading-relaxed">
+                {member.bio.includes("Former Israel Defense Minister") ? (
+                  <>
+                    <strong className="text-white">Former Israel Defense Minister and IDF Commander in Chief</strong>
+                    {member.bio.replace("Former Israel Defense Minister and IDF Commander in Chief", "")}
+                  </>
+                ) : member.bio}
+              </p>
             </div>
           ))}
         </div>
 
-        <p className="text-center text-white/30 text-xs mt-10">{tm.note}</p>
       </div>
     </section>
   );

@@ -50,15 +50,31 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-28 px-6 bg-navy-900">
-      <div className="max-w-7xl mx-auto">
+    <section
+      id="contact"
+      className="py-28 px-6 relative bg-navy-900"
+      style={{
+        backgroundImage: "url('/contact-bg.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center top",
+        backgroundAttachment: "fixed",
+      }}
+    >
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-navy-900/70" />
+      <div className="relative z-10 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
             <p className="text-gold-500 text-sm font-semibold uppercase tracking-widest mb-3">
               {c.label}
             </p>
             <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
-              {c.headline1}
+              {"Let's "}
+              <span className="relative inline-block">
+                <span className="text-white/70">B</span>
+                <span className="absolute inset-0 flex items-center justify-center gold-gradient font-black">$</span>
+              </span>
+              {"uild the"}
               <br />
               <span className="gold-gradient">{c.headline2}</span>
             </h2>

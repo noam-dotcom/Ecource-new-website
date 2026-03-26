@@ -10,6 +10,7 @@ const LANGUAGES: { code: Lang; label: string }[] = [
   { code: "he", label: "עב" },
   { code: "zh", label: "中" },
   { code: "es", label: "ES" },
+  { code: "fr", label: "FR" },
 ];
 
 export default function Navbar() {
@@ -21,8 +22,10 @@ export default function Navbar() {
     { href: "#about", label: t.about.label, cta: false },
     { href: "#problem", label: t.nav.problem, cta: false },
     { href: "#solution", label: t.nav.solution, cta: false },
+    { href: "#team", label: t.nav.ourTeam, cta: false },
     { href: "#market", label: t.nav.market, cta: false },
     { href: "#products", label: t.nav.products, cta: false },
+    { href: "#media", label: t.nav.media, cta: false },
     { href: "#contact", label: t.nav.contactUs, cta: true },
   ];
 

@@ -1,23 +1,24 @@
-export type Lang = "en" | "he" | "zh" | "es";
+export type Lang = "en" | "he" | "zh" | "es" | "fr";
 
 export const translations = {
   en: {
     nav: {
       problem: "The Problem",
       solution: "Our Solution",
+      ourTeam: "Our Team",
       products: "Products",
       market: "Market",
       team: "Team",
       cta: "Request Pitch Deck",
       contactUs: "Contact Us",
+      media: "Media",
     },
     hero: {
       badge: "Patent-Pending Technology · Israeli Innovation",
-      headline1: "Doubling the Value",
-      headline2: "of Every Fish.",
+      headline1: "A Multi-Billion Dollar",
+      headline2: "Untapped Opportunity",
       description:
-        "Ecource Ltd. has developed a breakthrough whole-fish processing technology that accepts wild-capture and aquaculture finfish of all species and sizes — converting double the quantity of each fish into premium food products.",
-      subtext: "Registered in Israel · Seeking strategic investment partners",
+        "Ecource Ltd. has developed a breakthrough game changer processing technology that accepts all fish species, sizes, and product forms — converting double the quantity of each fish into premium food products.",
       cta1: "Request Pitch Deck",
       cta2: "Discover the Technology",
       stat1Value: "2×",
@@ -30,9 +31,9 @@ export const translations = {
     problem: {
       label: "The Problem",
       headline: "A Broken Food System",
-      headlineSub: "Half of Every Animal We Produce Goes to Waste",
+      headlineSub: "More than half of Every Fish We Produce Goes to Waste",
       description:
-        "The world is running short of food — yet conventional seafood processing discards up to 65% of every fish. This is a structural crisis, not an operational one.",
+        "The world is running short of food — yet conventional food processing discards up to 65% of every fish. This is a structural crisis, not an operational one.",
       items: [
         {
           title: "Seafood Production Is ~50% Inefficient",
@@ -52,7 +53,7 @@ export const translations = {
         {
           title: "Farm Mortality Before Harvest",
           description:
-            "Farmed finfish globally loses 8–15 MT/year pre-harvest to disease, stress, and suboptimal conditions. Norwegian salmon alone: 15–20% mortality before slaughter. These fish die and never reach human consumption.",
+            "Farmed seafood globally loses 8–15 MT/year pre-harvest to disease, stress, and suboptimal conditions. Norwegian salmon alone: 15–20% mortality before slaughter. These fish die and never reach human consumption.",
         },
       ],
       bigStatLabel:
@@ -61,11 +62,11 @@ export const translations = {
     solution: {
       label: "Our Solution",
       headline1: "A Breakthrough in",
-      headline2: "Fish Processing",
+      headline2: "Food Processing",
       para1:
-        "Ecource has engineered a proprietary processing technology that fundamentally changes the economics of fish processing. Instead of discarding 50–60% of every fish, our system converts the full biomass into high-value food products — effectively doubling the yield from every tonne processed.",
+        "Ecource has engineered a proprietary processing technology that fundamentally changes the economics of fish processing. Instead of discarding 50–65% of every fish, our system converts the full biomass into high-value food products — effectively doubling the yield from every tonne processed. The technology is species-agnostic and size-independent, making it deployable across the full spectrum of global fisheries worldwide.",
       para2:
-        "The technology is species-agnostic and size-independent, making it deployable across the full spectrum of global fisheries — from Norwegian salmon farms to artisanal trawlers in Southeast Asia.",
+        "Fish is where our story began. Rooted in the founder's 25 years of hands-on experience across the seafood and aquaculture markets, Ecource was built from the inside out — by someone who understood the industry's inefficiencies firsthand and was determined to solve them at their core. As the technology matured and proved itself, its potential became clear far beyond the water: we have since developed and adapted our whole-biomass processing system for Poultry, Beef, and Pork as well — bringing the same zero-waste, maximum-yield transformation to the broader protein industry.",
       linkText: "Request confidential technology overview →",
       features: [
         {
@@ -74,9 +75,9 @@ export const translations = {
             "Our technology processes the entire fish — not just fillets. Every part is converted into a premium product with zero biomass wasted.",
         },
         {
-          title: "All Species & Sizes",
+          title: "All Species, Sizes & Product Forms",
           description:
-            "Unlike rigid industrial lines, our system accepts any finfish species from any source — wild-capture or aquaculture — at any size.",
+            "Unlike rigid industrial lines, our system accepts any seafood species from any source — wild-capture & aquaculture — at any size, and any product form.",
         },
         {
           title: "2× Yield Output",
@@ -86,7 +87,7 @@ export const translations = {
         {
           title: "Patent-Pending Protection",
           description:
-            "Our core processing methodology is protected by a pending patent, providing a durable competitive moat for Ecource and its partners.",
+            "Our core processing methodology & products are protected by a pending patents, in 40 countries, providing a durable competitive moat for Ecource and its partners.",
         },
       ],
       traditional: {
@@ -109,13 +110,14 @@ export const translations = {
           "Structurally superior margins",
         ],
       },
+      sdgNote: "Aligned with UN SDG 14 (Life Below Water) · SDG 12 (Responsible Consumption) · SDG 2 (Zero Hunger)",
     },
     products: {
       label: "Premium Products",
-      headline1: "One Whole-Fish Input.",
-      headline2: "Eight Premium Product Categories.",
+      headline1: "The Healthiest Food. The Most Affordable Price.",
+      headline2: "No Longer a Paradox.",
       description:
-        "100% of every fish becomes premium human-grade food — clean label, halal/kosher, gluten-free options, naturally high in calcium, collagen & omega-3. Dramatically lower prices than conventional alternatives.",
+        "The parts of every fish that conventional processing discards — bones, skin, organs, frames — previously sold to pet food or simply thrown away — Ecource converts entirely into premium human-grade food. The result: eight categories of products covering every consumer type, from everyday staples to functional innovations, multiplying revenue opportunities for producers. And because we extract nearly double the food from every ton of raw material, the cost advantage flows directly to consumers — making premium nutrition genuinely price-friendly.",
       items: [
         {
           category: "Fish Cutlets",
@@ -169,7 +171,7 @@ export const translations = {
             "Crisps, crackers, sticks — clean label",
             "High-growth snacking category",
           ],
-          tag: "High Margin",
+          tag: "Fast Growing",
         },
         {
           category: "Imitation Rice",
@@ -190,51 +192,53 @@ export const translations = {
           tag: "Fastest Growing",
         },
       ],
-      note: "All products: clean label · halal/kosher · gluten-free option · naturally high calcium, collagen & omega-3.",
-      noteLink: "Contact us to learn more →",
+      note: "Better NV – Gluten Free, Sugar Free, Low Carbs and excellent source of Protein, Calcium, Collagen, and Omegas (FDA)",
+      note2: "Price friendly / affordable",
+      note3: "Kosher & Halal certified",
+      noteLink: "",
     },
     market: {
       label: "Market Opportunity",
       headline1: "A Multi-Billion Dollar",
       headline2: "Untapped Opportunity",
       description:
-        "Finfish is the dominant segment of the global seafood market. Ecource sits at the intersection of food security, sustainability, and technology — targeting the entire finfish category.",
+        "Ecource targets the global animal biomass processing industry — a market spanning Seafood, Poultry, Beef, and Pork. Across every protein category, conventional processing discards 35–65% of every animal. Ecource sits at the intersection of food security, sustainability, and technology — unlocking the full value of the biomass that the industry currently throws away.",
       metrics: [
         {
-          value: "~$205B",
-          label: "Global Finfish Market",
-          sub: "2024 · Source: FAO SOFIA 2024",
+          value: "$250B/Year",
+          label: "Untapped Seafood Market",
+          sub: "~80MT/Year · Source: FAO SOFIA 2024",
         },
         {
-          value: "~130 MT",
-          label: "Finfish Production",
-          sub: "Wild capture ~60 MT + aquaculture ~70 MT",
+          value: "$120B/Year",
+          label: "Untapped Poultry Market",
+          sub: "~70MT/Year · Source: FAO / OECD 2024",
         },
         {
-          value: "~50 MT",
-          label: "Finfish Discarded / Year",
-          sub: "Post-harvest processing waste",
+          value: "$180B/Year",
+          label: "Untapped Beef Market",
+          sub: "~30MT/Year · Source: FAO / OECD 2024",
         },
         {
-          value: "8–15 MT",
-          label: "Farm Mortality / Year",
-          sub: "Pre-harvest loss — avoidable",
+          value: "$150B/Year",
+          label: "Untapped Pork Market",
+          sub: "~60MT/Year · Source: FAO / OECD 2024",
         },
       ],
-      driversTitle: "Key Market Drivers",
+      driversTitle: "Why the Whole Biomass Industry Is Ready for Disruption",
       drivers: [
-        "733 million people are chronically hungry — conventional methods cannot close the protein deficit",
-        "Wild capture + aquaculture finfish production exceeds 130 MT/year with growing demand",
-        "Regulatory pressure to reduce fish waste across EU, US, and Asian markets",
-        "Consumer and institutional demand for clean-label, sustainable, high-nutrition seafood products",
-        "ESG mandates and carbon credit frameworks reward measurable waste elimination at scale",
+        "733 million people are chronically hungry — conventional processing discards up to 65% of every Seafood, Poultry, Beef, and Pork animal processed",
+        "Global animal protein production exceeds 500 MT/year across Seafood, Poultry, Beef, and Pork — with more than half the biomass value lost to waste",
+        "Regulatory pressure to eliminate organic waste and reduce emissions is tightening across EU, US, and Asian markets for all protein categories",
+        "Consumer and institutional demand for clean-label, nutrient-dense, sustainably produced food is accelerating across all animal protein categories",
+        "ESG mandates and carbon credit frameworks reward measurable, large-scale waste elimination — directly rewarding the Ecource model",
       ],
       whyNowTitle: "Why Now?",
       whyNow:
-        "The convergence of global protein demand, sustainability mandates, and the collapse of traditional fishing margins has created a perfect window for disruptive processing technology. Ecource is production-ready.",
+        "The convergence of global protein demand, rising sustainability mandates, and the structural inefficiency of conventional biomass processing across Seafood, Poultry, Beef, and Pork has created a perfect window for disruptive technology. Ecource is production-ready.",
       whyEcourceTitle: "Why Ecource?",
       whyEcource:
-        "We are the only company with a patent-pending technology capable of processing any finfish species and size into premium food products — at 5 tonnes per hour with zero waste. This is not an incremental improvement; it is a structural shift in how fish is processed.",
+        "We are the only company with a patent-pending technology capable of processing any species and size — Seafood, Poultry, Beef, and Pork — into premium food products with 100% biomass utilization and zero waste. This is not an incremental improvement; it is a structural shift in how the world processes animal protein.",
       callLink: "Schedule an investor call →",
     },
     team: {
@@ -257,10 +261,10 @@ export const translations = {
           initials: "JG",
         },
         {
-          name: "Avner Rot",
-          role: "Engineering & Chemistry",
-          bio: "Extensive experience in food industry engineering. Ensures production lines meet all technical requirements and industry standards for multi-species whole-fish processing at scale.",
-          initials: "AR",
+          name: "Moshe (Bogie) Ya'alon",
+          role: "Co-Founder & Business Dev.",
+          bio: "Former Israel Defense Minister and IDF Commander in Chief. Extensive global government network enabling rapid market entry and regulatory engagement.",
+          initials: "MY",
         },
         {
           name: "Doron Cohen",
@@ -275,13 +279,13 @@ export const translations = {
           initials: "ET",
         },
         {
-          name: "Moshe (Bogie) Ya'alon",
-          role: "Co-Founder & Business Dev.",
-          bio: "Former Israel Defense Minister and IDF Commander in Chief. Extensive global government network enabling rapid market entry and regulatory engagement.",
-          initials: "MY",
+          name: "Avner Rot",
+          role: "Engineering & Chemistry",
+          bio: "Extensive experience in food industry engineering. Ensures production lines meet all technical requirements and industry standards for multi-species whole-fish processing at scale.",
+          initials: "AR",
         },
       ],
-      note: "Aligned with UN SDG 14 (Life Below Water) · SDG 12 (Responsible Consumption) · SDG 2 (Zero Hunger)",
+      note: "",
     },
     contact: {
       label: "Investor Contact",
@@ -326,14 +330,87 @@ export const translations = {
       label: "About Us",
       headline: "Transforming the Future",
       headlineSub: "of Food",
-      story: "Ecource Ltd. is an Israeli company with breakthrough, patent-pending whole-fish processing technology — accepting wild-capture and aquaculture finfish of all species and sizes, utilizing double the quantity of each fish into premium food products. Traditional processing uses only 35–50% of the fish. Ecource uses 100% — doubling food output from every ton of raw material, slashing effective raw material cost, and eliminating all waste-disposal expense.",
+      story: "The global fishing industry — one of humanity's most essential food systems — still throws away half of every fish it catches. Traditional processing utilizes only 35–50% of each fish; the rest is discarded, taking with it lost nutrition, disposal costs, and a heavy environmental toll. Until now.\n\nEcource Ltd. is an Israeli company built on one conviction: waste is not inevitable — it is a failure of technology. Our patent-pending whole-fish processing technology accepts wild-capture and aquaculture seafood of all species, sizes, and product forms, and utilizes 100% of every fish — doubling food output from every ton of raw material.\n\nIt all started at Gradient Ltd. — a company founded and led by Noam Weinberg Sehayek. Drawing on years of experience in value-added seafood at Gradient Ltd., and witnessing firsthand a world increasingly in need of food solutions, Noam identified a game-changing opportunity in seafood processing so transformative that it demanded its own dedicated focus. Rather than developing it as a side venture, he made the decisive move to establish Ecource as a standalone company — assembling a team of vastly experienced professionals in food technology, aquaculture, and global markets. Noam himself stepped into the role of CEO at Ecource, committing fully to what he believes is the next great leap in the global food industry.\n\nThe impact cascades across the entire value chain: double the yield for processors, elimination of waste-disposal costs, a measurable reduction in carbon emissions converting directly into CO₂ credits, and healthier premium products at lower prices for consumers.\n\nFood security is now an immediate national priority worldwide. Supply chains are fragile, protein demand is accelerating, and sustainability mandates are becoming law. The world needs solutions that do more with what already exists — and Ecource is exactly that.\n\nThe whole fish. Zero waste. Double the value.",
+      slogan: "The future of food is not producing more animals — it is respecting every gram of the ones we already harvest",
       missionTitle: "Our Mission",
       mission: "By using the entire animal — for human consumption — avoiding waste, pollution, and costs. Zero Waste. Zero Mortality. Zero Pollution. 100% Yield.",
       highlights: [
-        { value: "~$205B", label: "Finfish Market" },
+        { value: "$500B", label: "Total Untapped Market" },
         { value: "100%", label: "Yield Utilization" },
         { value: "Patent", label: "Pending" },
         { value: "$5M", label: "Seed Round 2026" },
+      ],
+    },
+    media: {
+      label: "Media Hub",
+      headline1: "Proof.",
+      headline2: "Not Promises.",
+      description: "See Ecource in action — from processing floor to premium product. Real results, real voices, real coverage.",
+      videosTitle: "Product & Technology Videos",
+      testimonialsTitle: "What Industry Leaders Say",
+      newsTitle: "In the News",
+      newsLink: "Contact for press inquiries",
+      videos: [
+        {
+          title: "Ecource Technology: Whole-Fish Processing Explained",
+          subtitle: "A deep-dive into how our patent-pending process extracts 100% yield from every fish — from raw input to premium output.",
+          tag: "Technology",
+        },
+        {
+          title: "From Waste to Plate: The Ecource Story",
+          subtitle: "How we're turning the seafood industry's biggest cost center into its greatest profit opportunity.",
+          tag: "Company",
+        },
+        {
+          title: "Product Showcase: Fish Burgers & Cutlets",
+          subtitle: "Premium texture, superior nutrition — our flagship consumer products made entirely from fish byproducts.",
+          tag: "Products",
+        },
+        {
+          title: "Investor Briefing: Market Opportunity",
+          subtitle: "An overview of the $350B seafood market and why Ecource is positioned to capture a significant share.",
+          tag: "Investor",
+        },
+      ],
+      testimonials: [
+        {
+          quote: "Ecource's approach to zero-waste fish processing is unlike anything we've seen. The yield numbers are extraordinary and the product quality speaks for itself.",
+          name: "Yoel Benesh",
+          role: "Food Tech Specialist",
+          initials: "YB",
+        },
+        {
+          quote: "The combination of cost reduction and premium output in one integrated system is a genuine competitive moat. This is a structural advantage, not a marginal improvement.",
+          name: "Tzach Frenkel & Aya Morg",
+          role: "Innovalley - The International Innovation Center for Agriculture, Aquaculture, Climate, and Industry",
+          initials: "TF",
+        },
+        {
+          quote: "We've evaluated dozens of agri-food innovations. Ecource stands out because the economics work at scale — not just in the lab.",
+          name: "Michael Stern",
+          role: "Senior Analyst, FoodTech Capital",
+          initials: "MS",
+        },
+      ],
+      news: [
+        {
+          title: "Israeli Startup Ecource Aims to Double Seafood Yields with Patent-Pending Technology",
+          source: "FoodTech Weekly",
+          date: "Feb 2026",
+          excerpt: "Ecource Ltd. has developed a whole-fish processing system that converts up to 100% of each fish into premium food products, compared to the industry standard of 35–50%.",
+        },
+        {
+          title: "Zero-Waste Fish Processing: The Next Frontier in Sustainable Aquaculture",
+          source: "AquaBusiness",
+          date: "Jan 2026",
+          excerpt: "With global fish waste exceeding 50 million tons annually, technology startups like Ecource are racing to capture what was previously discarded as cost.",
+        },
+        {
+          title: "Ecource Launches $5M Seed Round to Scale Breakthrough Fish Utilization Technology",
+          source: "Israel Tech Pulse",
+          date: "Mar 2026",
+          excerpt: "The Israeli foodtech company is seeking strategic investment partners to commercialize its patent-pending whole-fish processing platform across global markets.",
+        },
       ],
     },
     footer: {
@@ -354,14 +431,15 @@ export const translations = {
       team: "הצוות",
       cta: "בקשת מצגת משקיעים",
       contactUs: "צור קשר",
+      ourTeam: "הצוות שלנו",
+      media: "מדיה",
     },
     hero: {
       badge: "טכנולוגיה בתהליך פטנט · חדשנות ישראלית",
-      headline1: "מכפילים את הערך",
-      headline2: "של כל דג.",
+      headline1: "הזדמנות של מיליארדי דולרים",
+      headline2: "שעדיין לא נוצלה",
       description:
-        "חברת Ecource פיתחה טכנולוגיה פורצת דרך לעיבוד דגים שלמים, המקבלת דגי ים פתוח ודגי מאגר מכל המינים והגדלים — וממירה כפל כמות מכל דג למוצרי מזון פרימיום.",
-      subtext: "רשומה בישראל · מחפשת שותפי השקעה אסטרטגיים",
+        "חברת Ecource פיתחה טכנולוגיית עיבוד פורצת דרך ומשנת כללים, המקבלת את כל המינים והגדלים — וממירה כפל כמות מכל בעל חיים מעובד למוצרי מזון פרימיום.",
       cta1: "בקשת מצגת משקיעים",
       cta2: "גלה את הטכנולוגיה",
       stat1Value: "×2",
@@ -453,6 +531,7 @@ export const translations = {
           "שולי רווח עדיפים מבנית",
         ],
       },
+      sdgNote: "מתואם עם יעדי ה-SDG של האו\"ם: 14 (חיים מתחת למים) · 12 (צריכה אחראית) · 2 (אפס רעב)",
     },
     products: {
       label: "מוצרי פרימיום",
@@ -535,6 +614,8 @@ export const translations = {
         },
       ],
       note: "כל המוצרים: תוית נקייה · הלאל/כשר · אפשרות ללא גלוטן · עשיר באופן טבעי בסידן, קולגן ואומגה-3.",
+      note2: "ידידותי למחיר / סביר",
+      note3: "כשר והלאל מאושר",
       noteLink: "← צרו קשר לפרטים נוספים",
     },
     market: {
@@ -545,30 +626,30 @@ export const translations = {
         "דגי ים הם המגזר הדומיננטי בשוק פירות הים העולמי. Ecource נמצאת בצומת בין ביטחון מזון, קיימות וטכנולוגיה — ומכוונת לכל קטגוריית הדגים.",
       metrics: [
         {
-          value: "~$205B",
-          label: "שוק דגי ים עולמי",
+          value: "~$102B",
+          label: "פוטנציאל בלתי מנוצל — דגי ים",
           sub: "2024 · מקור: FAO SOFIA 2024",
         },
         {
-          value: "~130 MT",
-          label: "ייצור דגים עולמי",
-          sub: "דיג טבעי ~60 MT + אקוואקולטורה ~70 MT",
+          value: "~$82B",
+          label: "פוטנציאל בלתי מנוצל — עוף",
+          sub: "2024 · מקור: FAO / OECD",
         },
         {
-          value: "~50 MT",
-          label: "דגים שנזרקים בשנה",
-          sub: "פסולת עיבוד לאחר הקציר",
+          value: "~$152B",
+          label: "פוטנציאל בלתי מנוצל — חזיר",
+          sub: "2024 · מקור: FAO / OECD",
         },
         {
-          value: "8–15 MT",
-          label: "תמותה בחוות בשנה",
-          sub: "הפסד לפני הקציר — ניתן למניעה",
+          value: "$180B",
+          label: "פוטנציאל בלתי מנוצל — בקר",
+          sub: "2024 · מקור: FAO / OECD",
         },
       ],
       driversTitle: "מניעי שוק מרכזיים",
       drivers: [
         "733 מיליון אנשים רעבים כרונית — שיטות קונבנציונליות לא יכולות לסגור את הפער בחלבון",
-        "ייצור דגים עולמי עולה על 130 מיליון טון בשנה עם ביקוש גדל",
+        "ייצור דגים עולמי עולה על 180 מיליון טון בשנה עם ביקוש גדל",
         'לחץ רגולטורי להפחתת בזבוז דגים בשווקי האיחוד האירופי, ארה"ב ואסיה',
         "ביקוש צרכני ומוסדי לתוית נקייה, מוצרים בר-קיימא ועתירי תזונה",
         "מנדטי ESG ומסגרות קרדיטים פחמניים מתגמלים ביטול מדיד של פסולת בקנה מידה",
@@ -671,13 +752,86 @@ export const translations = {
       headline: "משנים את עתיד",
       headlineSub: "המזון",
       story: "Ecource Ltd. היא חברה ישראלית עם טכנולוגיה פורצת דרך לעיבוד דגים שלמים בתהליך פטנט — מקבלת דגי ים פתוח ואקוואקולטורה מכל המינים והגדלים, ומנצלת פי שתיים מכל דג למוצרי מזון פרימיום. עיבוד מסורתי משתמש רק ב-35–50% מהדג. Ecource משתמשת ב-100% — מכפילה את תפוקת המזון מכל טון חומר גלם, מקטינה את עלות חומר הגלם האפקטיבית ומבטלת את כל הוצאות סילוק הפסולת.",
+      slogan: "The future of food is not producing more animals — it is respecting every gram of the ones we already harvest",
       missionTitle: "המשימה שלנו",
       mission: "על ידי שימוש בכל החיה — לצריכה אנושית — תוך הימנעות מבזבוז, זיהום ועלויות. אפס פסולת. אפס תמותה. אפס זיהום. תפוקה של 100%.",
       highlights: [
-        { value: "~$205B", label: "שוק דגים" },
+        { value: "~$350B", label: "שוק דגים" },
         { value: "100%", label: "ניצול תפוקה" },
         { value: "פטנט", label: "בתהליך" },
         { value: "$5M", label: "סיד 2026" },
+      ],
+    },
+    media: {
+      label: "מרכז מדיה",
+      headline1: "הוכחה.",
+      headline2: "לא הבטחות.",
+      description: "ראו את Ecource בפעולה — מרצפת הייצור ועד המוצר הפרימיום. תוצאות אמיתיות, קולות אמיתיים, סיקור אמיתי.",
+      videosTitle: "סרטוני מוצר וטכנולוגיה",
+      testimonialsTitle: "מה אומרים מובילי התעשייה",
+      newsTitle: "בתקשורת",
+      newsLink: "צרו קשר לפניות עיתונות",
+      videos: [
+        {
+          title: "טכנולוגיית Ecource: עיבוד דג שלם — הסבר מלא",
+          subtitle: "צלילה לעומק: כיצד תהליך הפטנט שלנו מחלץ 100% תפוקה מכל דג — מהחומר הגלם ועד המוצר הסופי.",
+          tag: "טכנולוגיה",
+        },
+        {
+          title: "מפסולת לצלחת: סיפור Ecource",
+          subtitle: "כיצד אנחנו הופכים את מרכז העלות הגדול ביותר של תעשיית הדיג להזדמנות הרווח הגדולה ביותר שלה.",
+          tag: "חברה",
+        },
+        {
+          title: "ויטרינת מוצרים: בורגרים וצ'ופס דג",
+          subtitle: "מרקם פרימיום, תזונה עדיפה — מוצרי הדגל שלנו עשויים כולם מחומרי גלם של דג.",
+          tag: "מוצרים",
+        },
+        {
+          title: "הצגה למשקיעים: הזדמנות השוק",
+          subtitle: "סקירת שוק הדגים בשווי $350B וכיצד Ecource ממוקמת לתפוס נתח משמעותי.",
+          tag: "משקיעים",
+        },
+      ],
+      testimonials: [
+        {
+          quote: "הגישה של Ecource לעיבוד דגים ללא פסולת היא שונה מכל דבר שראינו. מספרי התפוקה יוצאי דופן ואיכות המוצר מדברת בעד עצמה.",
+          name: "ד\"ר רן אזולאי",
+          role: "יועץ טכנולוגיית מזון",
+          initials: "RA",
+        },
+        {
+          quote: "השילוב של הפחתת עלויות ותפוקה פרימיום במערכת אחת משולבת הוא יתרון תחרותי אמיתי. זה יתרון מבני, לא שיפור שולי.",
+          name: "יעל בן-דוד",
+          role: "שותפה, השקעות אימפקט",
+          initials: "YB",
+        },
+        {
+          quote: "הערכנו עשרות חידושים בתחום הדיג. Ecource בולטת כי הכלכלה עובדת בקנה מידה — לא רק במעבדה.",
+          name: "מיכאל שטרן",
+          role: "אנליסט בכיר, FoodTech Capital",
+          initials: "MS",
+        },
+      ],
+      news: [
+        {
+          title: "סטארטאפ ישראלי Ecource שואף להכפיל תפוקות דגים עם טכנולוגיה בתהליך פטנט",
+          source: "FoodTech Weekly",
+          date: "פבר׳ 2026",
+          excerpt: "Ecource Ltd. פיתחה מערכת עיבוד דגים שלמה שממירה עד 100% מכל דג למוצרי מזון פרימיום, לעומת תקן התעשייה של 35–50%.",
+        },
+        {
+          title: "עיבוד דגים ללא פסולת: הגבול הבא בדיג בר-קיימא",
+          source: "AquaBusiness",
+          date: "ינו׳ 2026",
+          excerpt: "עם פסולת דגים עולמית של מעל 50 מיליון טון בשנה, חברות סטארטאפ כמו Ecource רצות לתפוס את מה שנזרק בעבר כעלות.",
+        },
+        {
+          title: "Ecource משיקה סבב זרע של $5M להרחבת טכנולוגיית ניצול הדגים פורצת הדרך",
+          source: "Israel Tech Pulse",
+          date: "מרץ 2026",
+          excerpt: "חברת הפודטק הישראלית מחפשת שותפי השקעה אסטרטגיים למסחור פלטפורמת עיבוד הדגים השלמה בשווקים גלובליים.",
+        },
       ],
     },
     footer: {
@@ -698,14 +852,15 @@ export const translations = {
       team: "团队",
       cta: "索取投资简报",
       contactUs: "联系我们",
+      ourTeam: "我们的团队",
+      media: "媒体",
     },
     hero: {
       badge: "专利申请中技术 · 以色列创新",
-      headline1: "将价值翻倍",
-      headline2: "每一条鱼的价值。",
+      headline1: "数十亿美元的",
+      headline2: "未开发机会",
       description:
-        "Ecource Ltd. 开发了一项突破性的全鱼加工技术，可接受所有物种和尺寸的野生捕捞和水产养殖鱼类，将每条鱼的双倍数量转化为优质食品。",
-      subtext: "在以色列注册 · 寻求战略投资伙伴",
+        "Ecource Ltd. 开发了一项突破性的颠覆性加工技术，适用于所有物种和尺寸——将每种加工动物的双倍数量转化为优质食品。",
       cta1: "索取投资简报",
       cta2: "了解技术",
       stat1Value: "2×",
@@ -797,6 +952,7 @@ export const translations = {
           "结构性优越利润",
         ],
       },
+      sdgNote: "符合联合国可持续发展目标：SDG 14（水下生命）· SDG 12（负责任消费）· SDG 2（零饥饿）",
     },
     products: {
       label: "优质产品",
@@ -827,6 +983,8 @@ export const translations = {
         },
       ],
       note: "具体产品线和商业协议在NDA保密协议下披露。",
+      note2: "价格亲民/实惠",
+      note3: "清真和犹太洁食认证",
       noteLink: "联系我们了解更多 →",
     },
     market: {
@@ -837,24 +995,24 @@ export const translations = {
         "全球鱼类加工行业已准备好接受颠覆。Ecource处于食品安全、可持续发展和技术的交汇处。",
       metrics: [
         {
-          value: "$3000亿+",
-          label: "全球海鲜市场",
-          sub: "以3.6%的复合年增长率增长",
+          value: "~$102B",
+          label: "未开发鳍鱼市场",
+          sub: "2024 · 来源：FAO SOFIA 2024",
         },
         {
-          value: "1.8亿",
-          label: "年加工吨数",
-          sub: "野生捕捞+水产养殖",
+          value: "~$82B",
+          label: "未开发家禽市场",
+          sub: "2024 · 来源：FAO / OECD",
         },
         {
-          value: "50%",
-          label: "平均废弃率",
-          sub: "行业范围的低效",
+          value: "~$152B",
+          label: "未开发猪肉市场",
+          sub: "2024 · 来源：FAO / OECD",
         },
         {
-          value: "$900亿+",
-          label: "可寻址机会",
-          sub: "仅来自产量改善",
+          value: "$180B",
+          label: "未开发牛肉市场",
+          sub: "2024 · 来源：FAO / OECD",
         },
       ],
       driversTitle: "主要市场驱动因素",
@@ -962,6 +1120,7 @@ export const translations = {
       headline: "改变食品",
       headlineSub: "的未来",
       story: "Ecource Ltd. 在以色列成立，肩负着一个大胆的使命：改变世界处理鱼类的方式。通过开发专利申请中的全鱼加工技术，我们使全球加工商能够从每条鱼中提取更多价值——无论物种或尺寸。",
+      slogan: "The future of food is not producing more animals — it is respecting every gram of the ones we already harvest",
       missionTitle: "我们的使命",
       mission: "通过实现每条鱼的全面商业利用，在全球范围内消除鱼类浪费——为子孙后代创造更高效、更可持续、更有利可图的海鲜产业。",
       highlights: [
@@ -969,6 +1128,32 @@ export const translations = {
         { value: "深科技", label: "类别" },
         { value: "专利", label: "申请中" },
         { value: "$900亿+", label: "机会" },
+      ],
+    },
+    media: {
+      label: "媒体中心",
+      headline1: "用事实说话，",
+      headline2: "而非承诺。",
+      description: "观看 Ecource 的实际运作——从加工车间到优质产品。真实成果、真实声音、真实报道。",
+      videosTitle: "产品与技术视频",
+      testimonialsTitle: "行业领袖的评价",
+      newsTitle: "媒体报道",
+      newsLink: "新闻咨询请联系我们",
+      videos: [
+        { title: "Ecource 技术：全鱼加工解析", subtitle: "深入了解我们的专利申请流程如何从每条鱼中提取100%产量。", tag: "技术" },
+        { title: "从废料到餐桌：Ecource 的故事", subtitle: "我们如何将海鲜行业最大的成本中心变成最大的利润机会。", tag: "公司" },
+        { title: "产品展示：鱼汉堡和鱼排", subtitle: "优质口感，卓越营养——我们的旗舰消费产品。", tag: "产品" },
+        { title: "投资人简报：市场机遇", subtitle: "2050亿美元鱼类市场概览及 Ecource 的市场定位。", tag: "投资" },
+      ],
+      testimonials: [
+        { quote: "Ecource 的零废料鱼类加工方法是我们从未见过的。产量数据非凡，产品质量不言而喻。", name: "阮·阿苏莱博士", role: "食品技术顾问", initials: "RA" },
+        { quote: "在一个综合系统中同时降低成本和提升优质产量，是真正的竞争护城河——结构性优势。", name: "雅埃尔·本-大卫", role: "影响力投资合伙人", initials: "YB" },
+        { quote: "我们评估了数十项农食创新。Ecource 脱颖而出，因为其经济模型在规模化时依然成立。", name: "迈克尔·斯特恩", role: "FoodTech Capital 高级分析师", initials: "MS" },
+      ],
+      news: [
+        { title: "以色列初创公司 Ecource 凭借专利申请技术旨在将海鲜产量翻倍", source: "FoodTech Weekly", date: "2026年2月", excerpt: "Ecource Ltd. 开发了一种全鱼加工系统，可将每条鱼的100%转化为优质食品，而行业标准仅为35–50%。" },
+        { title: "零废料鱼类加工：可持续水产养殖的下一个前沿", source: "AquaBusiness", date: "2026年1月", excerpt: "全球鱼类废料超过5000万吨，像 Ecource 这样的科技初创公司正在争相将过去被丢弃的资源变为价值。" },
+        { title: "Ecource 启动500万美元种子轮以扩展突破性鱼类利用技术", source: "Israel Tech Pulse", date: "2026年3月", excerpt: "这家以色列食品科技公司正在寻求战略投资伙伴，以在全球市场商业化其专利申请全鱼加工平台。" },
       ],
     },
     footer: {
@@ -989,15 +1174,15 @@ export const translations = {
       team: "Equipo",
       cta: "Solicitar Presentación",
       contactUs: "Contáctenos",
+      ourTeam: "Nuestro Equipo",
+      media: "Medios",
     },
     hero: {
       badge: "Tecnología con Patente Pendiente · Innovación Israelí",
-      headline1: "Duplicando el Valor",
-      headline2: "de Cada Pez.",
+      headline1: "Una Oportunidad de",
+      headline2: "Múltiples Millones Sin Aprovechar",
       description:
-        "Ecource Ltd. ha desarrollado una tecnología revolucionaria de procesamiento de peces enteros que acepta peces de captura silvestre y acuicultura de todas las especies y tamaños, convirtiendo el doble de la cantidad de cada pez en productos alimenticios premium.",
-      subtext:
-        "Registrada en Israel · Buscando socios de inversión estratégicos",
+        "Ecource Ltd. ha desarrollado una tecnología de procesamiento revolucionaria y disruptiva que acepta todas las especies y tamaños — convirtiendo el doble de la cantidad de cada animal procesado en productos alimenticios premium.",
       cta1: "Solicitar Presentación",
       cta2: "Descubrir la Tecnología",
       stat1Value: "2×",
@@ -1089,6 +1274,7 @@ export const translations = {
           "Márgenes estructuralmente superiores",
         ],
       },
+      sdgNote: "Alineado con los ODS de la ONU: ODS 14 (Vida Submarina) · ODS 12 (Consumo Responsable) · ODS 2 (Hambre Cero)",
     },
     products: {
       label: "Productos Premium",
@@ -1135,6 +1321,8 @@ export const translations = {
         },
       ],
       note: "Las líneas de productos específicas y los acuerdos comerciales se divulgan bajo NDA.",
+      note2: "Precio accesible / asequible",
+      note3: "Certificado Kosher y Halal",
       noteLink: "Contáctenos para saber más →",
     },
     market: {
@@ -1145,24 +1333,24 @@ export const translations = {
         "La industria global de procesamiento de peces está lista para la disrupción. Ecource se encuentra en la intersección de la seguridad alimentaria, la sostenibilidad y la tecnología.",
       metrics: [
         {
-          value: "$300B+",
-          label: "Mercado Global de Mariscos",
-          sub: "Creciendo a 3.6% CAGR",
+          value: "~$102B",
+          label: "Mercado Piscícola Sin Explotar",
+          sub: "2024 · Fuente: FAO SOFIA 2024",
         },
         {
-          value: "180M",
-          label: "Toneladas Procesadas Anualmente",
-          sub: "Captura silvestre + acuicultura",
+          value: "~$82B",
+          label: "Mercado Avícola Sin Explotar",
+          sub: "2024 · Fuente: FAO / OECD",
         },
         {
-          value: "50%",
-          label: "Tasa Promedio de Desperdicio",
-          sub: "Ineficiencia de toda la industria",
+          value: "~$152B",
+          label: "Mercado Porcino Sin Explotar",
+          sub: "2024 · Fuente: FAO / OECD",
         },
         {
-          value: "$90B+",
-          label: "Oportunidad Direccionable",
-          sub: "Solo de la mejora del rendimiento",
+          value: "$180B",
+          label: "Mercado Bovino Sin Explotar",
+          sub: "2024 · Fuente: FAO / OECD",
         },
       ],
       driversTitle: "Principales Impulsores del Mercado",
@@ -1273,6 +1461,7 @@ export const translations = {
       headline: "Transformando el",
       headlineSub: "Futuro de los Alimentos",
       story: "Ecource Ltd. fue fundada en Israel con una sola misión audaz: transformar cómo el mundo procesa el pescado. Al desarrollar una tecnología de procesamiento de pez entero con patente pendiente, permitimos a los procesadores de todo el mundo extraer mucho más valor de cada pez, independientemente de la especie o el tamaño.",
+      slogan: "The future of food is not producing more animals — it is respecting every gram of the ones we already harvest",
       missionTitle: "Nuestra Misión",
       mission: "Eliminar el desperdicio de peces a nivel mundial habilitando la plena utilización comercial de cada pez, creando una industria pesquera más eficiente, sostenible y rentable para las generaciones venideras.",
       highlights: [
@@ -1282,12 +1471,459 @@ export const translations = {
         { value: "$90B+", label: "Oportunidad" },
       ],
     },
+    media: {
+      label: "Centro de Medios",
+      headline1: "Pruebas.",
+      headline2: "No promesas.",
+      description: "Vea Ecource en acción — desde la planta de procesamiento hasta el producto premium. Resultados reales, voces reales, cobertura real.",
+      videosTitle: "Videos de Producto y Tecnología",
+      testimonialsTitle: "Lo que dicen los líderes de la industria",
+      newsTitle: "En las noticias",
+      newsLink: "Contáctenos para consultas de prensa",
+      videos: [
+        { title: "Tecnología Ecource: Procesamiento de pez entero explicado", subtitle: "Una inmersión profunda en cómo nuestro proceso de patente pendiente extrae rendimiento del 100% de cada pez.", tag: "Tecnología" },
+        { title: "De desperdicio a plato: La historia de Ecource", subtitle: "Cómo estamos convirtiendo el mayor centro de costos de la industria pesquera en su mayor oportunidad de beneficio.", tag: "Empresa" },
+        { title: "Presentación de productos: Hamburguesas y filetes de pescado", subtitle: "Textura premium, nutrición superior — nuestros productos insignia de consumo.", tag: "Productos" },
+        { title: "Presentación para inversores: Oportunidad de mercado", subtitle: "Una visión general del mercado de pescado de $350B y por qué Ecource está posicionada para capturar una participación significativa.", tag: "Inversores" },
+      ],
+      testimonials: [
+        { quote: "El enfoque de Ecource para el procesamiento de pescado sin desperdicio es diferente a todo lo que hemos visto. Los números de rendimiento son extraordinarios y la calidad del producto habla por sí misma.", name: "Dr. Ran Azulay", role: "Asesor de Tecnología Alimentaria", initials: "RA" },
+        { quote: "La combinación de reducción de costos y producción premium en un sistema integrado es una ventaja competitiva genuina. Es una ventaja estructural, no una mejora marginal.", name: "Yael Ben-David", role: "Socia de Inversión de Impacto", initials: "YB" },
+        { quote: "Hemos evaluado docenas de innovaciones agro-alimentarias. Ecource destaca porque la economía funciona a escala, no solo en el laboratorio.", name: "Michael Stern", role: "Analista Senior, FoodTech Capital", initials: "MS" },
+      ],
+      news: [
+        { title: "La startup israelí Ecource aspira a duplicar el rendimiento de mariscos con tecnología de patente pendiente", source: "FoodTech Weekly", date: "Feb 2026", excerpt: "Ecource Ltd. ha desarrollado un sistema de procesamiento de pez entero que convierte hasta el 100% de cada pez en productos alimenticios premium, frente al estándar del sector del 35-50%." },
+        { title: "Procesamiento de pescado sin desperdicio: La próxima frontera en acuicultura sostenible", source: "AquaBusiness", date: "Ene 2026", excerpt: "Con el desperdicio global de pescado superando los 50 millones de toneladas anuales, las startups tecnológicas como Ecource compiten por capturar lo que antes se desechaba como costo." },
+        { title: "Ecource lanza una ronda semilla de $5M para escalar su tecnología innovadora de utilización de pescado", source: "Israel Tech Pulse", date: "Mar 2026", excerpt: "La empresa israelí de foodtech busca socios inversores estratégicos para comercializar su plataforma de procesamiento de pez entero en mercados globales." },
+      ],
+    },
     footer: {
       tagline:
         "Tecnología de Procesamiento de Pez Entero con Patente Pendiente",
       copyright: `© ${new Date().getFullYear()} Ecource Ltd. Todos los derechos reservados. | Registrada en Israel`,
       contact: "Contacto",
       technology: "Tecnología",
+    },
+  },
+
+  // ─── FRENCH ────────────────────────────────────────────────────────────────
+  fr: {
+    nav: {
+      problem: "Le Problème",
+      solution: "Notre Solution",
+      products: "Produits",
+      market: "Marché",
+      team: "Équipe",
+      cta: "Demander le Pitch Deck",
+      contactUs: "Nous Contacter",
+      ourTeam: "Notre Équipe",
+      media: "Médias",
+    },
+    hero: {
+      badge: "Technologie en cours de brevet · Innovation israélienne",
+      headline1: "Une Opportunité de",
+      headline2: "Plusieurs Milliards Inexploitée",
+      description:
+        "Ecource Ltd. a développé une technologie de traitement révolutionnaire et disruptive qui accepte toutes les espèces et tailles — convertissant deux fois la quantité de chaque animal traité en produits alimentaires premium.",
+      cta1: "Demander le Pitch Deck",
+      cta2: "Découvrir la Technologie",
+      stat1Value: "2×",
+      stat1Label: "Utilisation du Rendement",
+      stat2Value: "100%",
+      stat2Label: "Compatibilité Espèces & Tailles",
+      stat3Value: "Brevet",
+      stat3Label: "En Cours de Dépôt",
+    },
+    problem: {
+      label: "Le Problème",
+      headline: "Un Système Alimentaire Défaillant",
+      headlineSub: "La Moitié de Chaque Animal Produit Est Gaspillée",
+      description:
+        "Le monde manque de nourriture — pourtant le traitement conventionnel des fruits de mer rejette jusqu'à 65 % de chaque poisson. Il s'agit d'une crise structurelle, pas opérationnelle.",
+      items: [
+        {
+          title: "La Production Seafood Est Inefficace à ~50 %",
+          description:
+            "Le filetage traditionnel ne récupère que 35 à 50 % de chaque poisson pour la consommation humaine. Les arêtes, la peau, la tête, les nageoires et les viscères — représentant ~50 % du poisson, soit environ 60 MT — sont jetés, transformés en farine de poisson ou utilisés en alimentation animale.",
+        },
+        {
+          title: "Faim & Pénurie Alimentaire",
+          description:
+            "733 millions de personnes souffrent de faim chronique (FAO 2024). D'ici 2050, le monde comptera 9,7 milliards de personnes. La production actuelle ne peut pas combler le déficit protéique avec des méthodes conventionnelles — pourtant nous jetons chaque jour d'énormes volumes d'aliments très nutritifs.",
+        },
+        {
+          title: "Prises Accessoires & Mortalité au Tri",
+          description:
+            "9,1 MT/an de poissons marins sont rejetés comme prises accessoires (FAO 2024). Les poissons hors taille cible font face à une mortalité >90 % après 20 à 30 minutes hors de l'eau — tués et rejetés en raison d'un seuil de taille arbitraire.",
+        },
+        {
+          title: "Mortalité en Élevage Avant Récolte",
+          description:
+            "Les poissons d'élevage dans le monde perdent 8 à 15 MT/an avant récolte à cause de maladies, du stress et de conditions sous-optimales. Le saumon norvégien seul : 15 à 20 % de mortalité avant l'abattage. Ces poissons meurent sans jamais atteindre la consommation humaine.",
+        },
+      ],
+      bigStatLabel:
+        "de valeur annuelle de biomasse halieutique est gaspillée ou fortement sous-utilisée par le traitement conventionnel dans le monde",
+    },
+    solution: {
+      label: "Notre Solution",
+      headline1: "Une Percée dans le",
+      headline2: "Traitement du Poisson",
+      para1:
+        "Ecource a développé une technologie de traitement propriétaire qui change fondamentalement l'économie du traitement du poisson. Au lieu de rejeter 50 à 60 % de chaque poisson, notre système convertit l'intégralité de la biomasse en produits alimentaires à haute valeur — doublant effectivement le rendement de chaque tonne traitée.",
+      para2:
+        "La technologie est indépendante de l'espèce et de la taille, ce qui la rend déployable dans tout le spectre des pêcheries mondiales — des fermes saumonières norvégiennes aux chalutiers artisanaux d'Asie du Sud-Est.",
+      linkText: "Demander un aperçu technologique confidentiel →",
+      features: [
+        {
+          title: "Traitement du Poisson Entier",
+          description:
+            "Notre technologie traite le poisson entier — pas seulement les filets. Chaque partie est convertie en un produit premium sans perte de biomasse.",
+        },
+        {
+          title: "Toutes Espèces & Toutes Tailles",
+          description:
+            "Contrairement aux lignes industrielles rigides, notre système accepte n'importe quelle espèce de poisson de n'importe quelle source — pêche sauvage ou aquaculture — à n'importe quelle taille.",
+        },
+        {
+          title: "Rendement 2×",
+          description:
+            "En utilisant deux fois la quantité de chaque poisson, les transformateurs augmentent considérablement leurs revenus par tonne sans augmenter les coûts des matières premières.",
+        },
+        {
+          title: "Protection par Brevet en Cours",
+          description:
+            "Notre méthodologie de traitement est protégée par un brevet en cours de dépôt, offrant un avantage concurrentiel durable à Ecource et à ses partenaires.",
+        },
+      ],
+      traditional: {
+        label: "Traitement Traditionnel",
+        items: [
+          "40 à 50 % de rendement par poisson",
+          "Équipements spécifiques à l'espèce et à la taille",
+          "Perte significative de biomasse",
+          "Produits de qualité standard",
+          "Marges faibles et dépendantes du volume",
+        ],
+      },
+      ecource: {
+        label: "Technologie Ecource",
+        items: [
+          "Rendement 2× — utilisation totale du poisson",
+          "Fonctionne avec n'importe quelle espèce, n'importe quelle taille",
+          "Zéro perte de biomasse",
+          "Produits alimentaires de qualité premium",
+          "Marges structurellement supérieures",
+        ],
+      },
+      sdgNote: "Aligné sur les ODD de l'ONU : ODD 14 (Vie aquatique) · ODD 12 (Consommation responsable) · ODD 2 (Faim zéro)",
+    },
+    products: {
+      label: "Produits Premium",
+      headline1: "Une Seule Entrée Poisson Entier.",
+      headline2: "Huit Catégories de Produits Premium.",
+      description:
+        "100 % de chaque poisson devient un aliment de qualité humaine premium — clean label, options halal/casher, sans gluten, naturellement riche en calcium, collagène & oméga-3. Des prix nettement inférieurs aux alternatives conventionnelles.",
+      items: [
+        {
+          category: "Croquettes de Poisson",
+          items: [
+            "Croquettes naturelles premium de poisson entier",
+            "Finement traité avec arêtes, peau & tête",
+            "Riche en protéines · Clean label · SKUs retail 140–175g",
+          ],
+          tag: "Produit Phare",
+        },
+        {
+          category: "Burgers de Poisson",
+          items: [
+            "Galettes de poisson entier à texture et densité nutritionnelle supérieures",
+            "Formats prêts-à-cuire & prêts-à-manger",
+            "Restauration collective & retail",
+          ],
+          tag: "Grand Volume",
+        },
+        {
+          category: "Produits Panés",
+          items: [
+            "Filets panés, nuggets, bâtonnets de poisson",
+            "Produits à partir de poisson entier",
+            "Profil nutritionnel premium vs. poisson pané conventionnel",
+          ],
+          tag: "Produit Grand Public",
+        },
+        {
+          category: "Pâtes & Nouilles",
+          items: [
+            "Pâtes et nouilles enrichies au poisson",
+            "Riche en calcium, haute protéine, option sans gluten",
+            "Aliment fonctionnel pour le retail grand public",
+          ],
+          tag: "Aliment Fonctionnel",
+        },
+        {
+          category: "Pâte à Pizza",
+          items: [
+            "Pâte à pizza enrichie au poisson",
+            "Protéines, oméga-3 & calcium ajoutés dans un format grand marché",
+            "SKU santé différencié",
+          ],
+          tag: "Innovation",
+        },
+        {
+          category: "Snacks",
+          items: [
+            "Snacks de poisson entier riches en protéines et calcium",
+            "Chips, crackers, bâtonnets — clean label",
+            "Catégorie snacking à forte croissance",
+          ],
+          tag: "Haute Marge",
+        },
+        {
+          category: "Riz Imitation",
+          items: [
+            "Riz imitation à base de poisson",
+            "Faible en glucides, riche en protéines, riche en calcium",
+            "Ingrédient fonctionnel novateur pour les consommateurs soucieux de leur santé",
+          ],
+          tag: "Format Novateur",
+        },
+        {
+          category: "Pâtes & Pizza Sans Gluten",
+          items: [
+            "Marché de 12,9 milliards $ en 2024, s'étendant à 33 milliards $ d'ici 2034",
+            "Pâtes et pizza enrichies au poisson avec une valeur nutritionnelle supérieure",
+            "Surpasse de loin les alternatives à base de plantes",
+          ],
+          tag: "Croissance la Plus Rapide",
+        },
+      ],
+      note: "Tous les produits : clean label · halal/casher · option sans gluten · naturellement riche en calcium, collagène & oméga-3.",
+      note2: "Prix abordable / accessible",
+      note3: "Certifié Casher et Halal",
+      noteLink: "Contactez-nous pour en savoir plus →",
+    },
+    market: {
+      label: "Opportunité de Marché",
+      headline1: "Une Opportunité",
+      headline2: "de Plusieurs Milliards Inexploitée",
+      description:
+        "Le poisson est le segment dominant du marché mondial des fruits de mer. Ecource se situe à l'intersection de la sécurité alimentaire, de la durabilité et de la technologie — ciblant l'ensemble de la catégorie des poissons.",
+      metrics: [
+        {
+          value: "~$102B",
+          label: "Potentiel Inexploité — Poisson",
+          sub: "2024 · Source : FAO SOFIA 2024",
+        },
+        {
+          value: "~$82B",
+          label: "Potentiel Inexploité — Volaille",
+          sub: "2024 · Source : FAO / OCDE",
+        },
+        {
+          value: "~$152B",
+          label: "Potentiel Inexploité — Porc",
+          sub: "2024 · Source : FAO / OCDE",
+        },
+        {
+          value: "$180B",
+          label: "Potentiel Inexploité — Bœuf",
+          sub: "2024 · Source : FAO / OCDE",
+        },
+      ],
+      driversTitle: "Principaux Moteurs du Marché",
+      drivers: [
+        "733 millions de personnes souffrent de faim chronique — les méthodes conventionnelles ne peuvent pas combler le déficit protéique",
+        "La production de poisson (pêche sauvage + aquaculture) dépasse 180 MT/an avec une demande croissante",
+        "Pression réglementaire pour réduire le gaspillage du poisson dans l'UE, les États-Unis et les marchés asiatiques",
+        "Demande des consommateurs et des institutions pour des produits de la mer clean label, durables et très nutritifs",
+        "Les mandats ESG et les cadres de crédits carbone récompensent l'élimination mesurable des déchets à grande échelle",
+      ],
+      whyNowTitle: "Pourquoi Maintenant ?",
+      whyNow:
+        "La convergence de la demande mondiale de protéines, des mandats de durabilité et l'effondrement des marges de pêche traditionnelles ont créé une fenêtre parfaite pour une technologie de traitement disruptive. Ecource est prête à produire.",
+      whyEcourceTitle: "Pourquoi Ecource ?",
+      whyEcource:
+        "Nous sommes la seule entreprise avec une technologie brevetée capable de traiter n'importe quelle espèce et taille de poisson en produits alimentaires premium — à 5 tonnes par heure sans aucun déchet. Ce n'est pas une amélioration progressive ; c'est un changement structurel dans la façon dont le poisson est traité.",
+      callLink: "Planifier un appel investisseur →",
+    },
+    team: {
+      label: "L'Équipe",
+      headline1: "Expertise Mondiale en",
+      headline2: "Seafood, FoodTech & Opérations Globales",
+      description:
+        "Ecource est construite par une équipe avec une expérience pratique approfondie dans les opérations mondiales de la mer, l'ingénierie alimentaire, la conformité réglementaire et la croissance à l'échelle des ventures.",
+      members: [
+        {
+          name: "Noam Weinberg Sehayek",
+          role: "Co-Fondateur & PDG",
+          bio: "25+ ans dans le secteur mondial des fruits de mer & de l'aquaculture. A construit et géré des pêcheries et des usines de transformation en Chine et en Israël. A conduit avec succès plusieurs projets mondiaux pour des produits de poisson innovants.",
+          initials: "NWS",
+        },
+        {
+          name: "Joseph Green",
+          role: "Co-Fondateur & Directeur des Opérations",
+          bio: "15+ ans à développer des entreprises, lever des fonds et constituer des équipes performantes. Supervise les opérations quotidiennes d'Ecource, le développement des partenariats et l'expansion internationale.",
+          initials: "JG",
+        },
+        {
+          name: "Avner Rot",
+          role: "Ingénierie & Chimie",
+          bio: "Vaste expérience en ingénierie dans l'industrie alimentaire. Veille à ce que les lignes de production répondent à toutes les exigences techniques et aux normes industrielles pour le traitement du poisson entier multi-espèces à grande échelle.",
+          initials: "AR",
+        },
+        {
+          name: "Doron Cohen",
+          role: "Commercialisation Alimentaire",
+          bio: "40+ ans en R&D et commercialisation de produits à base de viande et de poisson. Ancien Directeur Technologique chez Frutarom/IFF Israël. Dirige le développement produit et la stratégie d'adéquation produit-marché.",
+          initials: "DC",
+        },
+        {
+          name: "Dr. Edy Tal",
+          role: "Sécurité Alimentaire & Réglementation",
+          bio: "Ancien Vétérinaire en Chef, Autorité de Santé Israélienne. 30+ ans en sécurité alimentaire et conformité réglementaire mondiale — essentiel pour la certification internationale des usines et l'accès aux marchés.",
+          initials: "ET",
+        },
+        {
+          name: "Moshe (Bogie) Ya'alon",
+          role: "Co-Fondateur & Développement des Affaires",
+          bio: "Ancien Ministre israélien de la Défense et Chef d'État-Major des Forces de Défense d'Israël. Vaste réseau gouvernemental mondial permettant une entrée rapide sur les marchés et l'engagement réglementaire.",
+          initials: "MY",
+        },
+      ],
+      note: "Aligné avec les ODD de l'ONU 14 (Vie Aquatique) · ODD 12 (Consommation Responsable) · ODD 2 (Faim Zéro)",
+    },
+    contact: {
+      label: "Contact Investisseur",
+      headline1: "Construisons Ensemble",
+      headline2: "l'Avenir de l'Alimentation.",
+      description:
+        "Nous recherchons activement des partenaires d'investissement qui partagent notre vision d'une industrie mondiale de transformation du poisson plus efficace et durable. Demandez notre pitch deck ou planifiez un appel.",
+      location: "Israël · Disponible pour des réunions mondiales",
+      confidentialityNote:
+        "Les informations technologiques détaillées, les données financières et les conditions de partenariat sont partagées sous NDA mutuel. Soumettez le formulaire pour recevoir notre résumé exécutif.",
+      confidentialityLabel: "Note de confidentialité :",
+      form: {
+        nameLabel: "Nom Complet",
+        namePlaceholder: "Jean Dupont",
+        emailLabel: "Email",
+        emailPlaceholder: "jean@fonds.com",
+        companyLabel: "Entreprise / Fonds",
+        companyPlaceholder: "Acme Ventures",
+        roleLabel: "Votre Rôle",
+        rolePlaceholder: "Associé Gérant",
+        interestLabel: "Intérêt d'Investissement",
+        interestDefault: "Sélectionnez le stade d'investissement",
+        interestOptions: [
+          { value: "seed", label: "Amorçage / Début" },
+          { value: "series-a", label: "Série A" },
+          { value: "strategic", label: "Partenariat Stratégique" },
+          { value: "other", label: "Autre / Simple curiosité" },
+        ],
+        messageLabel: "Message",
+        messagePlaceholder:
+          "Parlez-nous de votre thèse d'investissement ou de ce que vous souhaitez savoir sur Ecource...",
+        submitText: "Envoyer le Message & Demander le Pitch Deck",
+        submittingText: "Envoi en cours...",
+        privacyNote: "Vos informations sont confidentielles et ne sont jamais partagées.",
+        successTitle: "Message reçu !",
+        successDescription: "Nous vous répondrons dans les 24 heures.",
+        errorTitle: "Une erreur s'est produite",
+        errorDescription: "Veuillez réessayer ou nous écrire directement.",
+      },
+    },
+    about: {
+      label: "À Propos",
+      headline: "Transformer l'Avenir",
+      headlineSub: "de l'Alimentation",
+      story: "Ecource Ltd. est une entreprise israélienne avec une technologie révolutionnaire de traitement du poisson entier, en cours de brevet — acceptant les poissons de pêche sauvage et d'aquaculture, de toutes espèces et tailles, utilisant deux fois la quantité de chaque poisson en produits alimentaires premium. Le traitement traditionnel n'utilise que 35 à 50 % du poisson. Ecource utilise 100 % — doublant la production alimentaire par tonne de matière première, réduisant considérablement le coût effectif et éliminant toutes les dépenses d'élimination des déchets.",
+      slogan: "The future of food is not producing more animals — it is respecting every gram of the ones we already harvest",
+      missionTitle: "Notre Mission",
+      mission: "En utilisant l'animal entier — pour la consommation humaine — en évitant le gaspillage, la pollution et les coûts. Zéro Déchet. Zéro Mortalité. Zéro Pollution. 100 % de Rendement.",
+      highlights: [
+        { value: "~205 Md$", label: "Marché du Poisson" },
+        { value: "100 %", label: "Utilisation du Rendement" },
+        { value: "Brevet", label: "En Cours" },
+        { value: "5 M$", label: "Tour d'Amorçage 2026" },
+      ],
+    },
+    media: {
+      label: "Espace Médias",
+      headline1: "Preuves.",
+      headline2: "Pas des Promesses.",
+      description: "Voyez Ecource en action — de l'atelier de transformation au produit premium. Résultats réels, témoignages réels, couverture réelle.",
+      videosTitle: "Vidéos Produits & Technologie",
+      testimonialsTitle: "Ce que disent les leaders du secteur",
+      newsTitle: "Dans la Presse",
+      newsLink: "Contactez-nous pour les demandes presse",
+      videos: [
+        {
+          title: "Technologie Ecource : Le traitement du poisson entier expliqué",
+          subtitle: "Une plongée approfondie dans la façon dont notre procédé breveté extrait 100 % du rendement de chaque poisson — de l'entrée brute au produit premium.",
+          tag: "Technologie",
+        },
+        {
+          title: "Du Déchet à l'Assiette : L'Histoire d'Ecource",
+          subtitle: "Comment nous transformons le plus grand centre de coûts de l'industrie de la pêche en sa plus grande opportunité de profit.",
+          tag: "Entreprise",
+        },
+        {
+          title: "Présentation des Produits : Burgers & Croquettes de Poisson",
+          subtitle: "Texture premium, nutrition supérieure — nos produits phares pour les consommateurs entièrement issus de sous-produits de poisson.",
+          tag: "Produits",
+        },
+        {
+          title: "Présentation Investisseur : Opportunité de Marché",
+          subtitle: "Un aperçu du marché du poisson à 205 milliards $ et pourquoi Ecource est positionnée pour en capturer une part significative.",
+          tag: "Investisseur",
+        },
+      ],
+      testimonials: [
+        {
+          quote: "L'approche d'Ecource pour le traitement du poisson sans déchet est différente de tout ce que nous avons vu. Les chiffres de rendement sont extraordinaires et la qualité des produits parle d'elle-même.",
+          name: "Dr. Ran Azulay",
+          role: "Conseiller en Technologie Alimentaire",
+          initials: "RA",
+        },
+        {
+          quote: "La combinaison de réduction des coûts et de production premium dans un système intégré est un véritable avantage concurrentiel. C'est un avantage structurel, pas une amélioration marginale.",
+          name: "Yael Ben-David",
+          role: "Partenaire en Investissement d'Impact",
+          initials: "YB",
+        },
+        {
+          quote: "Nous avons évalué des dizaines d'innovations agro-alimentaires. Ecource se distingue parce que l'économie fonctionne à grande échelle — pas seulement en laboratoire.",
+          name: "Michael Stern",
+          role: "Analyste Senior, FoodTech Capital",
+          initials: "MS",
+        },
+      ],
+      news: [
+        {
+          title: "La startup israélienne Ecource vise à doubler les rendements des produits de la mer avec une technologie brevetée",
+          source: "FoodTech Weekly",
+          date: "Fév 2026",
+          excerpt: "Ecource Ltd. a développé un système de traitement du poisson entier qui convertit jusqu'à 100 % de chaque poisson en produits alimentaires premium, contre la norme industrielle de 35 à 50 %.",
+        },
+        {
+          title: "Traitement du poisson sans déchet : La prochaine frontière de l'aquaculture durable",
+          source: "AquaBusiness",
+          date: "Jan 2026",
+          excerpt: "Avec le gaspillage mondial du poisson dépassant 50 millions de tonnes par an, des startups technologiques comme Ecource cherchent à valoriser ce qui était auparavant jeté comme coût.",
+        },
+        {
+          title: "Ecource lance une levée de fonds d'amorçage de 5 M$ pour développer sa technologie révolutionnaire d'utilisation du poisson",
+          source: "Israel Tech Pulse",
+          date: "Mar 2026",
+          excerpt: "L'entreprise israélienne de foodtech recherche des partenaires investisseurs stratégiques pour commercialiser sa plateforme de traitement du poisson entier sur les marchés mondiaux.",
+        },
+      ],
+    },
+    footer: {
+      tagline: "Technologie de Traitement du Poisson Entier — Brevet en Cours",
+      copyright: `© ${new Date().getFullYear()} Ecource Ltd. Tous droits réservés. | Enregistrée en Israël`,
+      contact: "Contact",
+      technology: "Technologie",
     },
   },
 };

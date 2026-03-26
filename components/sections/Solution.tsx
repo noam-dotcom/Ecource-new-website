@@ -10,22 +10,41 @@ export default function Solution() {
   const s = t.solution;
 
   return (
-    <section id="solution" className="py-28 px-6 bg-navy-900">
-      <div className="max-w-7xl mx-auto">
+    <section
+      id="solution"
+      className="py-28 px-6 relative bg-navy-900"
+      style={{
+        backgroundImage: "url('/solution-bg.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
+      }}
+    >
+      {/* Dark overlay so text stays readable */}
+      <div className="absolute inset-0 bg-navy-900/85" />
+      <div className="relative z-10 max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <p className="text-gold-500 text-sm font-semibold uppercase tracking-widest mb-3">
+            {s.label}
+          </p>
+          <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
+            {s.headline1}
+            <br />
+            <span className="gold-gradient">{s.headline2}</span>
+          </h2>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <p className="text-gold-500 text-sm font-semibold uppercase tracking-widest mb-3">
-              {s.label}
-            </p>
-            <h2 className="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
-              {s.headline1}
-              <br />
-              <span className="gold-gradient">{s.headline2}</span>
-            </h2>
-            <p className="text-white/60 text-lg leading-relaxed mb-8">
+            <p className="text-white/60 text-lg leading-relaxed mb-6">
               {s.para1}
             </p>
-            <p className="text-white/60 leading-relaxed mb-10">{s.para2}</p>
+            <p className="text-white/60 text-lg leading-relaxed mb-6">
+              {s.para2.split("Poultry, Beef, and Pork")[0]}
+              <strong className="text-white">Poultry, Beef, and Pork</strong>
+              {s.para2.split("Poultry, Beef, and Pork")[1]}
+            </p>
             <a
               href="#contact"
               className="inline-flex items-center gap-2 text-gold-400 font-semibold hover:text-gold-300 transition-colors"
@@ -84,6 +103,10 @@ export default function Solution() {
               ))}
             </ul>
           </div>
+        </div>
+
+        <div className="mt-10 bg-gradient-to-r from-gold-500/10 to-transparent border border-gold-500/20 rounded-2xl p-6 text-center">
+          <p className="text-white/60 text-sm font-medium">{s.sdgNote}</p>
         </div>
       </div>
     </section>

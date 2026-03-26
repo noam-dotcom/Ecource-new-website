@@ -22,7 +22,8 @@ export default function Problem() {
             <span className="text-white/50">{p.headlineSub}</span>
           </h2>
           <p className="text-white/60 max-w-2xl mx-auto text-lg">
-            {p.description}
+            The world is running short of food — yet conventional food processing discards up to 65% of every fish.<br />
+            {"This is a "}<strong className="text-white">structural crisis</strong>{", not an operational one."}
           </p>
         </div>
 

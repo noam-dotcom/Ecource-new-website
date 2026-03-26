@@ -18,8 +18,18 @@ export default function Products() {
   const p = t.products;
 
   return (
-    <section id="products" className="py-28 px-6 bg-navy-800">
-      <div className="max-w-7xl mx-auto">
+    <section
+      id="products"
+      className="py-28 px-6 relative bg-navy-800"
+      style={{
+        backgroundImage: "url('/products-bg.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
+      }}
+    >
+      <div className="absolute inset-0 bg-navy-900/50" />
+      <div className="relative z-10 max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-gold-500 text-sm font-semibold uppercase tracking-widest mb-3">
             {p.label}
@@ -56,13 +66,22 @@ export default function Products() {
           ))}
         </div>
 
-        <div className="mt-12 bg-navy-900/60 border border-white/10 rounded-2xl p-8 text-center">
-          <p className="text-white/50 text-sm">
-            {p.note}{" "}
-            <a href="#contact" className="text-gold-400 hover:underline font-medium">
-              {p.noteLink}
-            </a>
-          </p>
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="bg-gradient-to-br from-gold-500/15 to-gold-900/10 border border-gold-500/40 rounded-2xl p-7 text-center flex flex-col items-center gap-3">
+            <span className="text-3xl">🧬</span>
+            <p className="text-gold-400 font-black text-sm uppercase tracking-widest">Superior Nutrition</p>
+            <p className="text-white/80 text-sm leading-relaxed">{p.note}</p>
+          </div>
+          <div className="bg-gradient-to-br from-green-500/15 to-green-900/10 border border-green-500/30 rounded-2xl p-7 text-center flex flex-col items-center gap-3">
+            <span className="text-3xl">💚</span>
+            <p className="text-green-400 font-black text-sm uppercase tracking-widest">Consumer Friendly</p>
+            <p className="text-white/80 text-sm leading-relaxed">{p.note2}</p>
+          </div>
+          <div className="bg-gradient-to-br from-blue-500/15 to-blue-900/10 border border-blue-500/30 rounded-2xl p-7 text-center flex flex-col items-center gap-3">
+            <span className="text-3xl">✡︎</span>
+            <p className="text-blue-400 font-black text-sm uppercase tracking-widest">Certified</p>
+            <p className="text-white/80 text-sm leading-relaxed">{p.note3}</p>
+          </div>
         </div>
       </div>
     </section>
