@@ -105,9 +105,6 @@ export default function Solution() {
           </div>
         </div>
 
-        <div className="mt-10 bg-gradient-to-r from-gold-500/10 to-transparent border border-gold-500/20 rounded-2xl p-6 text-center">
-          <p className="text-white/60 text-sm font-medium">{s.sdgNote}</p>
-        </div>
       </div>
     </section>
   );

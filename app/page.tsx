@@ -3,6 +3,7 @@ import Hero from "@/components/sections/Hero";
 import AboutUs from "@/components/sections/AboutUs";
 import Problem from "@/components/sections/Problem";
 import Solution from "@/components/sections/Solution";
+import SDG from "@/components/sections/SDG";
 import Products from "@/components/sections/Products";
 import Market from "@/components/sections/Market";
 import Team from "@/components/sections/Team";
@@ -18,6 +19,7 @@ export default function Home() {
       <AboutUs />
       <Problem />
       <Solution />
+      <SDG />
       <Market />
       <Products />
       <Team />
