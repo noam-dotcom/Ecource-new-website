@@ -1,13 +1,19 @@
 "use client";
 
+import Image from "next/image";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const SDG_COLORS: Record<number, { bg: string; ring: string }> = {
-  2:  { bg: "#DDA63A", ring: "#c8912a" },
-  9:  { bg: "#FD6925", ring: "#e0541a" },
-  12: { bg: "#BF8B2E", ring: "#a87828" },
-  13: { bg: "#3F7E44", ring: "#306335" },
-  14: { bg: "#0A97D9", ring: "#0880bb" },
+// Official UN SDG icon URLs — zero-padded, e.g. 02, 09, 12, 13, 14
+const SDG_ICON_URL = (id: number) =>
+  `https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-${String(id).padStart(2, "0")}.jpg`;
+
+const SDG_COLORS: Record<number, string> = {
+  2:  "#DDA63A",
+  3:  "#4C9F38",
+  9:  "#FD6925",
+  12: "#BF8B2E",
+  13: "#3F7E44",
+  14: "#0A97D9",
 };
 
 export default function SDG() {
@@ -32,40 +38,37 @@ export default function SDG() {
         </div>
 
         {/* SDG Goal Cards */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5 mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5 mb-12">
           {s.goals.map((goal) => {
-            const color = SDG_COLORS[goal.id];
+            const accentColor = SDG_COLORS[goal.id];
             return (
               <div
                 key={goal.id}
                 className="group rounded-2xl overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-2"
-                style={{ boxShadow: `0 4px 24px 0 ${color.bg}33` }}
+                style={{ boxShadow: `0 4px 24px 0 ${accentColor}40` }}
               >
-                {/* Colored header */}
-                <div
-                  className="flex flex-col items-center justify-center pt-7 pb-5 px-4"
-                  style={{ backgroundColor: color.bg }}
-                >
-                  {/* SDG Number badge */}
+                {/* Official SDG icon — square, full width */}
+                <div className="relative w-full aspect-square">
+                  <Image
+                    src={SDG_ICON_URL(goal.id)}
+                    alt={`SDG ${goal.id}: ${goal.title}`}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
+                  />
+                  {/* Subtle overlay on hover */}
                   <div
-                    className="w-14 h-14 rounded-full flex items-center justify-center mb-3 border-2"
-                    style={{
-                      backgroundColor: "rgba(255,255,255,0.2)",
-                      borderColor: "rgba(255,255,255,0.5)",
-                    }}
-                  >
-                    <span className="text-white font-black text-xl leading-none">
-                      {goal.id}
-                    </span>
-                  </div>
-                  <p className="text-white text-center font-bold text-xs leading-tight uppercase tracking-wide">
-                    {goal.title}
-                  </p>
+                    className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+                    style={{ backgroundColor: accentColor }}
+                  />
                 </div>
 
-                {/* Description */}
-                <div className="flex-1 bg-navy-900/80 border border-white/10 border-t-0 rounded-b-2xl px-4 py-4">
-                  <p className="text-white/60 text-xs leading-relaxed text-center">
+                {/* Tagline */}
+                <div
+                  className="flex-1 px-4 py-4 border border-t-0 border-white/10 rounded-b-2xl"
+                  style={{ backgroundColor: `${accentColor}18` }}
+                >
+                  <p className="text-white/70 text-xs leading-relaxed text-center">
                     {goal.tagline}
                   </p>
                 </div>
@@ -75,14 +78,13 @@ export default function SDG() {
         </div>
 
         {/* UN Note */}
-        <div className="flex items-center justify-center gap-3 mt-6">
-          {/* UN Emblem - simple SVG */}
+        <div className="flex items-center justify-center gap-3">
           <svg
             width="28"
             height="28"
             viewBox="0 0 28 28"
             fill="none"
-            className="shrink-0 opacity-60"
+            className="shrink-0 opacity-50"
           >
             <circle cx="14" cy="14" r="13" stroke="#f59e0b" strokeWidth="1.5" fill="none" />
             <ellipse cx="14" cy="14" rx="5.5" ry="13" stroke="#f59e0b" strokeWidth="1" fill="none" />
