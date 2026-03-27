@@ -1,6 +1,17 @@
 "use client";
 
+import Image from "next/image";
 import { useLanguage } from "@/contexts/LanguageContext";
+
+// Ordered to match translations members array: Noam, Joseph, Bogie, Doron, Dr.Tal, Avner
+const TEAM_PHOTOS: Record<number, string> = {
+  0: "/team/team-noam.jpg",
+  1: "/team/team-joseph.jpg",
+  2: "/team/team-bogie.jpg",
+  3: "/team/team-yoel.jpg",
+  4: "/team/team-drtal.jpg",
+  5: "/team/team-yigal.jpg",
+};
 
 export default function Team() {
   const { t } = useLanguage();
