@@ -16,7 +16,7 @@ const COLORS = [
 
 // Mapped by index order matching the translations items array
 const PRODUCT_IMAGES = [
-  "/products/product-cutlet.jpg",       // Fish Cutlets
+  "/products/product-cutlet.png",       // Fish Cutlets
   "/products/product-burger.png",       // Fish Burgers
   "/products/product-breaded.png",      // Breaded Products
   "/products/product-pasta.jpg",        // Pasta & Noodles
