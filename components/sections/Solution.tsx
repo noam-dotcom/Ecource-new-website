@@ -17,7 +17,6 @@ export default function Solution() {
         backgroundImage: "url('/solution-bg.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundAttachment: "fixed",
       }}
     >
       {/* Dark overlay so text stays readable */}

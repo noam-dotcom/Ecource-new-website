@@ -38,7 +38,6 @@ export default function Products() {
         backgroundImage: "url('/products-bg.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundAttachment: "fixed",
       }}
     >
       <div className="absolute inset-0 bg-navy-900/50" />

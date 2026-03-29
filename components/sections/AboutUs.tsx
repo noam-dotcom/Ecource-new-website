@@ -14,7 +14,6 @@ export default function AboutUs() {
         backgroundImage: "url('/about-bg.svg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundAttachment: "fixed",
       }}
     >
       <div className="absolute inset-0 bg-navy-900/70" />
