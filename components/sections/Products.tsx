@@ -20,9 +20,9 @@ const PRODUCT_IMAGES = [
   "/products/product-burger.jpg",       // Fish Burgers
   "/products/product-breaded.jpg",      // Breaded Products
   "/products/product-pasta.jpg",        // Pasta & Noodles
-  "/products/product-paella.jpg",       // Pizza Dough
+  "/products/product-paella.png",       // Pizza Dough
   "/products/product-snacks.jpg",       // Snacks
-  "/products/product-rice.jpg",         // Imitation Rice
+  "/products/product-rice.png",         // Imitation Rice
   "/products/product-pasta-delmar.jpg", // Gluten-Free Pasta & Pizza
 ];
 
@@ -71,7 +71,7 @@ export default function Products() {
                       src={img}
                       alt={prod.category}
                       fill
-                      className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                      className={`object-cover object-center group-hover:scale-105 transition-transform duration-500 ${idx === 6 ? "scale-150" : ""} ${idx === 4 ? "brightness-125" : ""}`}
                       sizes="(max-width: 768px) 100vw, 50vw"
                     />
                     {/* Bottom fade so text below blends */}
