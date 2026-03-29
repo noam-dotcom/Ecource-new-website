@@ -21,7 +21,7 @@ const PRODUCT_IMAGES = [
   "/products/product-breaded.jpg",      // Breaded Products
   "/products/product-pasta.jpg",        // Pasta & Noodles
   "/products/product-paella.png",       // Pizza Dough
-  "/products/product-snacks.jpg",       // Snacks
+  "/products/product-snacks.png",       // Snacks
   "/products/product-rice.png",         // Imitation Rice
   "/products/product-pasta-delmar.jpg", // Gluten-Free Pasta & Pizza
 ];
