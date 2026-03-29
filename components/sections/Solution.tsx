@@ -12,7 +12,7 @@ export default function Solution() {
   return (
     <section
       id="solution"
-      className="py-28 px-6 relative bg-navy-900"
+      className="parallax-bg py-28 px-6 relative bg-navy-900"
       style={{
         backgroundImage: "url('/solution-bg.jpg')",
         backgroundSize: "cover",

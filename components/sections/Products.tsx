@@ -33,7 +33,7 @@ export default function Products() {
   return (
     <section
       id="products"
-      className="py-28 px-6 relative bg-navy-800"
+      className="parallax-bg py-28 px-6 relative bg-navy-800"
       style={{
         backgroundImage: "url('/products-bg.jpg')",
         backgroundSize: "cover",

@@ -9,7 +9,7 @@ export default function AboutUs() {
   return (
     <section
       id="about"
-      className="py-28 px-6 relative bg-navy-900"
+      className="parallax-bg py-28 px-6 relative bg-navy-900"
       style={{
         backgroundImage: "url('/about-bg.svg')",
         backgroundSize: "cover",

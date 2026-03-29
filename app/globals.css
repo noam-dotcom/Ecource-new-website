@@ -16,6 +16,13 @@
   }
 }
 
+/* Parallax effect — disabled on touch devices (iOS Safari) */
+@media (hover: hover) {
+  .parallax-bg {
+    background-attachment: fixed;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

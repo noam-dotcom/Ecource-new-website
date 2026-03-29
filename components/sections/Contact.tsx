@@ -52,7 +52,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-28 px-6 relative bg-navy-900"
+      className="parallax-bg py-28 px-6 relative bg-navy-900"
       style={{
         backgroundImage: "url('/contact-bg.jpg')",
         backgroundSize: "cover",
