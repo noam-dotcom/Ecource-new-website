@@ -18,7 +18,7 @@ const COLORS = [
 const PRODUCT_IMAGES = [
   "/products/product-cutlet.jpg",       // Fish Cutlets
   "/products/product-burger.png",       // Fish Burgers
-  "/products/product-breaded.jpg",      // Breaded Products
+  "/products/product-breaded.png",      // Breaded Products
   "/products/product-pasta.jpg",        // Pasta & Noodles
   "/products/product-paella.png",       // Pizza Dough
   "/products/product-snacks.png",       // Snacks
