@@ -71,7 +71,7 @@ export default function Products() {
                       src={img}
                       alt={prod.category}
                       fill
-                      className={`group-hover:scale-105 transition-transform duration-500 object-cover object-center ${idx === 6 ? "scale-150" : ""} ${idx === 4 ? "brightness-125" : ""}`}
+                      className={`group-hover:scale-105 transition-transform duration-500 object-cover object-center ${idx === 6 ? "scale-150" : ""} ${idx === 4 ? "brightness-125" : ""} ${idx === 2 ? "brightness-150 contrast-75" : ""}`}
                       sizes="(max-width: 768px) 100vw, 50vw"
                     />
                     {/* Bottom fade so text below blends */}
