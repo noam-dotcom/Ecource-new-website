@@ -17,7 +17,7 @@ const COLORS = [
 // Mapped by index order matching the translations items array
 const PRODUCT_IMAGES = [
   "/products/product-cutlet.jpg",       // Fish Cutlets
-  "/products/product-burger.jpg",       // Fish Burgers
+  "/products/product-burger.png",       // Fish Burgers
   "/products/product-breaded.jpg",      // Breaded Products
   "/products/product-pasta.jpg",        // Pasta & Noodles
   "/products/product-paella.png",       // Pizza Dough
@@ -71,7 +71,7 @@ export default function Products() {
                       src={img}
                       alt={prod.category}
                       fill
-                      className={`group-hover:scale-105 transition-transform duration-500 ${idx === 1 ? "object-contain object-center" : "object-cover object-center"} ${idx === 6 ? "scale-150" : ""} ${idx === 4 ? "brightness-125" : ""}`}
+                      className={`group-hover:scale-105 transition-transform duration-500 object-cover object-center ${idx === 6 ? "scale-150" : ""} ${idx === 4 ? "brightness-125" : ""}`}
                       sizes="(max-width: 768px) 100vw, 50vw"
                     />
                     {/* Bottom fade so text below blends */}
