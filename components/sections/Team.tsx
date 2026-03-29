@@ -33,13 +33,25 @@ export default function Team() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {tm.members.map((member) => (
+          {tm.members.map((member, idx) => (
             <div
               key={member.role}
               className="bg-navy-900/60 border border-white/10 rounded-2xl p-8 hover:border-gold-500/30 transition-all hover:-translate-y-1 duration-300 group"
             >
-              <div className="w-16 h-16 rounded-2xl bg-gold-500/15 flex items-center justify-center mb-5 group-hover:bg-gold-500/25 transition-colors">
-                <span className="text-gold-400 font-black text-sm">{member.initials}</span>
+              <div className="w-20 h-20 rounded-2xl overflow-hidden mb-5 bg-gold-500/15">
+                {TEAM_PHOTOS[idx] ? (
+                  <Image
+                    src={TEAM_PHOTOS[idx]}
+                    alt={member.name}
+                    width={80}
+                    height={80}
+                    className="w-full h-full object-cover object-top"
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center">
+                    <span className="text-gold-400 font-black text-sm">{member.initials}</span>
+                  </div>
+                )}
               </div>
               <h3 className="text-white font-bold text-lg mb-0.5">{member.name}</h3>
               <p className="text-gold-400 text-sm font-medium mb-4">{member.role}</p>
