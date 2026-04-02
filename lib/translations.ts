@@ -24,7 +24,7 @@ export const translations = {
       stat1Value: "2×",
       stat1Label: "Yield Per Fish",
       stat2Value: "100%",
-      stat2Label: "Any Species · Any Size",
+      stat2Label: "Any Species · Any Size · Any Production Form",
       stat3Value: "40+",
       stat3Label: "Countries Patent Filed",
     },
