@@ -31,7 +31,12 @@ export default function Hero() {
         </p>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 animate-fade-in">
-          {t.market.metrics.map((metric) => (
+          {[
+            { value: "$250B/Year", label: "Untapped Seafood Market", sub: "~80MT/Year · Source: FAO SOFIA 2024" },
+            { value: "2×", label: "Fish Yield Per Catch", sub: "Full biomass utilization" },
+            { value: "40+", label: "Countries Patent Filed", sub: "Patent-pending protection" },
+            { value: "25+", label: "Years Seafood Expertise", sub: "Founder's hands-on industry experience" },
+          ].map((metric) => (
             <div
               key={metric.label}
               className="bg-navy-800/60 border border-white/10 rounded-2xl p-5 text-center hover:border-gold-500/30 transition-colors"
