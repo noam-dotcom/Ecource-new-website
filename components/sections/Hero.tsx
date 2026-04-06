@@ -10,18 +10,9 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20 pb-10 overflow-hidden"
+      className="parallax-bg relative min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20 pb-10 overflow-hidden"
+      style={{ backgroundImage: "url('/fishing-vessel.png')", backgroundSize: "cover", backgroundPosition: "center" }}
     >
-      {/* Video background */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source src="/hero-bg.mp4" type="video/mp4" />
-      </video>
       <div className="absolute inset-0 bg-black/55 z-0" />
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-gold-500/5 blur-3xl" />
