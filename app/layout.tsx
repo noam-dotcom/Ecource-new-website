@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+import { StickyInvestorBar } from "@/components/StickyInvestorBar";
 
 export const metadata: Metadata = {
   title: "Ecource Ltd. | Breakthrough Whole-Fish Processing Technology",
@@ -31,6 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body>
+        <StickyInvestorBar />
         <LanguageProvider>
           {children}
           <Toaster />

@@ -1,111 +1,9 @@
 "use client";
 
-import { useState } from "react";
-import { Play, Newspaper, ChevronRight, ExternalLink, Film, Users } from "lucide-react";
+import { Newspaper, ChevronRight, ExternalLink, Film, Users } from "lucide-react"; // ExternalLink used in testimonial verify link
 import { useLanguage } from "@/contexts/LanguageContext";
 
-function VideoCard({
-  title,
-  subtitle,
-  tag,
-  featured = false,
-}: {
-  title: string;
-  subtitle: string;
-  tag: string;
-  featured?: boolean;
-}) {
-  const [hovered, setHovered] = useState(false);
 
-  return (
-    <div
-      className={`relative group rounded-2xl overflow-hidden border transition-all duration-500 cursor-pointer ${
-        featured
-          ? "border-gold-500/30 bg-navy-800/80"
-          : "border-white/10 bg-navy-800/50 hover:border-gold-500/20"
-      }`}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-    >
-      {/* Thumbnail area */}
-      <div className={`relative ${featured ? "h-64" : "h-48"} bg-gradient-to-br from-navy-700 to-navy-900 flex items-center justify-center overflow-hidden`}>
-        {/* Animated background pattern */}
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0 bg-gradient-to-br from-gold-500/20 via-transparent to-blue-500/10" />
-          <div
-            className="absolute inset-0 transition-transform duration-700"
-            style={{
-              backgroundImage: `radial-gradient(circle at 30% 40%, rgba(200,150,42,0.15) 0%, transparent 50%),
-                                radial-gradient(circle at 70% 60%, rgba(26,140,110,0.1) 0%, transparent 50%)`,
-              transform: hovered ? "scale(1.1)" : "scale(1)",
-            }}
-          />
-          {/* Grid lines */}
-          <svg className="absolute inset-0 w-full h-full" opacity="0.3">
-            <defs>
-              <pattern id={`grid-${title}`} width="40" height="40" patternUnits="userSpaceOnUse">
-                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#c8962a" strokeWidth="0.5"/>
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill={`url(#grid-${title})`}/>
-          </svg>
-        </div>
-
-        {/* Play button */}
-        <div className={`relative z-10 flex flex-col items-center gap-3 transition-all duration-300 ${hovered ? "scale-110" : "scale-100"}`}>
-          <div className={`rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 ${
-            featured
-              ? "w-20 h-20 bg-gold-500 shadow-gold-500/40"
-              : "w-14 h-14 bg-gold-500/90 shadow-gold-500/30 group-hover:bg-gold-500"
-          }`}>
-            <Play size={featured ? 28 : 20} className="text-navy-900 ml-1" fill="currentColor" />
-          </div>
-          {featured && (
-            <span className="text-white/60 text-xs font-medium tracking-widest uppercase">Watch Now</span>
-          )}
-        </div>
-
-        {/* Tag */}
-        <div className="absolute top-3 left-3">
-          <span className={`text-xs font-bold px-2.5 py-1 rounded-full ${
-            featured
-              ? "bg-gold-500 text-navy-900"
-              : "bg-white/10 text-white/70 border border-white/10"
-          }`}>
-            {tag}
-          </span>
-        </div>
-
-        {/* Duration indicator -->*/}
-        <div className="absolute bottom-3 right-3 bg-black/60 text-white/70 text-xs px-2 py-0.5 rounded font-mono">
-          2:34
-        </div>
-      </div>
-
-      {/* Text */}
-      <div className={`p-5 ${featured ? "p-6" : ""}`}>
-        <h4 className={`font-bold text-white mb-1 leading-snug ${featured ? "text-lg" : "text-sm"}`}>{title}</h4>
-        <p className={`text-white/50 leading-relaxed ${featured ? "text-sm" : "text-xs"}`}>{subtitle}</p>
-      </div>
-    </div>
-  );
-}
-
-function NewsCard({ title, source, date, excerpt }: { title: string; source: string; date: string; excerpt: string }) {
-  return (
-    <div className="group flex flex-col gap-3 p-6 rounded-2xl border border-white/10 bg-navy-800/40 hover:border-gold-500/20 hover:bg-navy-800/60 transition-all duration-300 cursor-pointer">
-      <div className="flex items-center justify-between">
-        <span className="text-gold-400 text-xs font-bold uppercase tracking-widest">{source}</span>
-        <span className="text-white/30 text-xs">{date}</span>
-      </div>
-      <h4 className="text-white font-bold text-sm leading-snug group-hover:text-gold-200 transition-colors">{title}</h4>
-      <p className="text-white/50 text-xs leading-relaxed">{excerpt}</p>
-      <div className="flex items-center gap-1 text-gold-400 text-xs font-semibold mt-auto pt-1 opacity-0 group-hover:opacity-100 transition-opacity">
-        Read more <ExternalLink size={10} />
-      </div>
-    </div>
-  );
-}
 
 export default function MediaHub() {
   const { t } = useLanguage();
@@ -138,23 +36,21 @@ export default function MediaHub() {
             <h3 className="text-white font-bold text-xl">{m.videosTitle}</h3>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {/* Featured video */}
-            <div className="lg:col-span-1">
-              <VideoCard
-                title={m.videos[0].title}
-                subtitle={m.videos[0].subtitle}
-                tag={m.videos[0].tag}
-                featured
-              />
+          <div className="text-center py-12 px-8 border border-dashed border-white/20 rounded-2xl">
+            <div className="w-16 h-16 rounded-full bg-gold-500/10 flex items-center justify-center mx-auto mb-6">
+              <Film size={28} className="text-gold-400" />
             </div>
-
-            {/* Side videos */}
-            <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {m.videos.slice(1).map((v) => (
-                <VideoCard key={v.title} title={v.title} subtitle={v.subtitle} tag={v.tag} />
-              ))}
-            </div>
+            <h3 className="text-white font-bold text-xl mb-3">Technology Videos — In Production</h3>
+            <p className="text-white/60 text-sm leading-relaxed max-w-lg mx-auto mb-6">
+              Our technology walkthrough and founder pitch videos are currently being produced.
+              Request early access to pilot footage via the investor contact form below.
+            </p>
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 text-gold-400 font-semibold text-sm hover:text-gold-300 transition-colors"
+            >
+              Request Video Access <ChevronRight size={14} />
+            </a>
           </div>
         </div>
 
@@ -169,7 +65,7 @@ export default function MediaHub() {
             </div>
             <h3 className="text-white font-bold text-xl">{m.testimonialsTitle}</h3>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {m.testimonials.map((t) => (
               <div
                 key={t.name}
@@ -190,8 +86,31 @@ export default function MediaHub() {
                     <p className="text-white/40 text-xs">{t.role}</p>
                   </div>
                 </div>
+                {t.name.includes("Tzach") && (
+                  <a
+                    href="https://www.innovalley.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 mt-4 text-gold-400/70 text-xs hover:text-gold-300 transition-colors"
+                  >
+                    Verify Innovalley <ExternalLink size={10} />
+                  </a>
+                )}
               </div>
             ))}
+
+            {/* Placeholder for additional references */}
+            <div className="flex flex-col items-center justify-center text-center p-6 rounded-2xl border border-dashed border-white/20 text-white/50">
+              <p className="text-sm leading-relaxed mb-4">
+                Additional industry references and testimonials available to qualified investors upon request under NDA.
+              </p>
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-1 text-gold-400 text-sm font-semibold hover:text-gold-300 transition-colors"
+              >
+                Request References <ChevronRight size={14} />
+              </a>
+            </div>
           </div>
         </div>
 
@@ -200,21 +119,21 @@ export default function MediaHub() {
 
         {/* ── News ── */}
         <div>
-          <div className="flex items-center justify-between mb-8">
-            <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-lg bg-gold-500/15 flex items-center justify-center">
-                <Newspaper size={16} className="text-gold-400" />
-              </div>
-              <h3 className="text-white font-bold text-xl">{m.newsTitle}</h3>
+          <div className="flex items-center gap-3 mb-8">
+            <div className="w-8 h-8 rounded-lg bg-gold-500/15 flex items-center justify-center">
+              <Newspaper size={16} className="text-gold-400" />
             </div>
-            <a href="#contact" className="hidden sm:flex items-center gap-1 text-gold-400 text-sm font-semibold hover:text-gold-300 transition-colors">
-              {m.newsLink} <ChevronRight size={14} />
-            </a>
+            <h3 className="text-white font-bold text-xl">{m.newsTitle}</h3>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {m.news.map((n) => (
-              <NewsCard key={n.title} title={n.title} source={n.source} date={n.date} excerpt={n.excerpt} />
-            ))}
+          <div className="text-center py-10 px-8 border border-dashed border-white/20 rounded-2xl">
+            <h3 className="text-white font-bold text-lg mb-3">Press & Media</h3>
+            <p className="text-white/60 text-sm leading-relaxed mb-4">
+              Ecource is currently in active media outreach.<br />
+              For press inquiries contact:{" "}
+              <a href="mailto:press@ecource.com" className="text-gold-400 hover:text-gold-300 transition-colors">
+                press@ecource.com
+              </a>
+            </p>
           </div>
         </div>
 

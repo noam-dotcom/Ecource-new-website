@@ -39,21 +39,34 @@ export const translations = {
           title: "Seafood Production Is ~50% Inefficient",
           description:
             "Traditional filleting recovers only 35–50% of each fish for human consumption. Bones, skin, head, fins, and viscera — comprising ~50% of the fish, equal to about 60 MT — are discarded, rendered for fishmeal, or used in pet food.",
+          sources: [
+            { label: "source", url: "https://www.fao.org/flw-in-fish-value-chains/value-chain/processing-storage/processing-plants/en/" },
+          ],
         },
         {
           title: "Hunger & Food Scarcity",
           description:
-            "733 million people are chronically hungry (FAO 2024). By 2050, the world will have 9.7B people. Existing production cannot close the gap with conventional methods — yet we discard enormous volumes of highly nutritious food every single day.",
+            "733 million people faced chronic hunger in 2023 (FAO — State of Food Security and Nutrition in the World, 2024). By 2050, the world will have 9.7B people. Existing production cannot close the gap with conventional methods — yet we discard enormous volumes of highly nutritious food every single day.",
+          sources: [
+            { label: "FAO SOFI 2024", url: "https://openknowledge.fao.org/items/ebe19244-9611-443c-a2a6-25cec697b361" },
+            { label: "UN Population 2022", url: "https://www.un.org/development/desa/pd/content/world-population-prospects-2022" },
+          ],
         },
         {
           title: "Bycatch & Sorting Mortality",
           description:
-            "9.1 MT/year of marine fish are discarded as bycatch (FAO 2024). Fish outside target sizes face >90% mortality after 20–30 minutes out of water — killed and discarded because of an arbitrary size threshold.",
+            "9.1 MT/year of marine fish are discarded as bycatch (FAO — Third Assessment of Global Marine Fisheries Discards, 2019). Fish outside target sizes face >90% mortality after 20–30 minutes out of water — killed and discarded because of an arbitrary size threshold.",
+          sources: [
+            { label: "FAO 2019", url: "https://www.fao.org/responsible-fishing/resources/detail/en/c/1317018/" },
+          ],
         },
         {
           title: "Farm Mortality Before Harvest",
           description:
-            "Farmed seafood globally loses 8–15 MT/year pre-harvest to disease, stress, and suboptimal conditions. Norwegian salmon alone: 15–20% mortality before slaughter. These fish die and never reach human consumption.",
+            "Farmed seafood globally loses 8–15 MT/year pre-harvest to disease, stress, and suboptimal conditions. Norwegian salmon alone: 14–17% mortality before slaughter. These fish die and never reach human consumption.",
+          sources: [
+            { label: "source", url: "https://www.fishfarmingexpert.com/farmed-salmon-fish-health-mortality-rate/norway-farmed-salmon-mortality-rate-fell-below-15-last-year/2064848" },
+          ],
         },
       ],
       bigStatLabel:
@@ -200,14 +213,14 @@ export const translations = {
         {
           category: "Gluten-Free Pasta & Pizza",
           items: [
-            "$12.9B market in 2024, expanding to $33B by 2034",
+            "The global gluten-free food market reached $12.9B in 2024, projected to $33.6B by 2034 — Ecource's fish-enriched format targets the premium functional-food tier of this fast-growing category. (Source: Precedence Research, 2025)",
             "Fish-enriched pasta and pizza with superior nutritional value",
             "Far surpasses plant-based alternatives",
           ],
           tag: "Fastest Growing",
         },
       ],
-      note: "Better NV – Gluten Free, Sugar Free, Low Carbs and excellent source of Protein, Calcium, Collagen, and Omegas (FDA)",
+      note: "High in protein, calcium, collagen, and omega-3 fatty acids — nutrients naturally present in whole-fish biomass. Nutritional lab data available in due diligence package.",
       note2: "Price friendly / affordable",
       note3: "Kosher & Halal certified",
       noteLink: "",
@@ -222,22 +235,22 @@ export const translations = {
         {
           value: "$250B/Year",
           label: "Untapped Seafood Market",
-          sub: "~80MT/Year · Source: FAO SOFIA 2024",
+          sub: "~80MT/Year estimated underutilized biomass · Derived from FAO SOFIA 2024 total production data",
         },
         {
           value: "$120B/Year",
           label: "Untapped Poultry Market",
-          sub: "~70MT/Year · Source: FAO / OECD 2024",
+          sub: "~44MT/Year estimated underutilized biomass · Derived from FAO/OECD 2024 production data",
         },
         {
           value: "$180B/Year",
           label: "Untapped Beef Market",
-          sub: "~30MT/Year · Source: FAO / OECD 2024",
+          sub: "~30MT/Year estimated underutilized biomass · Derived from FAO/OECD 2024 production data",
         },
         {
-          value: "$150B/Year",
+          value: "$90B/Year",
           label: "Untapped Pork Market",
-          sub: "~60MT/Year · Source: FAO / OECD 2024",
+          sub: "~36MT/Year estimated underutilized biomass · Derived from FAO/OECD 2024 production data",
         },
       ],
       driversTitle: "Why the Whole Biomass Industry Is Ready for Disruption",
@@ -345,12 +358,12 @@ export const translations = {
       label: "About Us",
       headline: "Transforming the Future",
       headlineSub: "of Food",
-      story: "Ecource was built on an insight forged at Gradient Ltd. — the Israeli value-added seafood company founded and led by Noam Weinberg Sehayek. Working closely with processors across the industry, Noam witnessed firsthand how much value was being discarded with every catch — and recognized that waste at that scale isn't a resource problem. It is a technology failure waiting to be solved.\n\nRather than pursue the solution as a side venture, Noam made the deliberate decision to establish Ecource as a dedicated standalone company — assembling a team of seasoned experts in food technology, aquaculture, and global markets. The result: a patent-pending whole-fish processing technology that converts 100% of every fish into premium food for human consumption, doubling yield and eliminating waste entirely.",
-      slogan: "The future of food is not producing more animals — it is respecting every gram of the ones we already harvest",
+      story: "Ecource is built on 20 years of being inside the problem.\n\nGradient Ltd. — our parent company — is the Israeli value-added seafood company founded and led by Noam Weinberg Sehayek. For two decades, we have sourced, processed, and sold premium seafood to customers across the globe. We know every node of the supply chain — the processors, the vessels, the retailers, the margins, and the waste. We watched firsthand as more than half of every fish we worked with was discarded, downgraded, or sold at a fraction of its real nutritional value.\n\nWe didn't theorize about the problem. We lived it. And what we saw wasn't a resource problem — it was a technology failure waiting to be solved.\n\nEcource was founded to solve it — established as a dedicated standalone company with its own team, technology, and focus, backed by the commercial infrastructure and industry relationships that only 20 years in the field can build. The result: a patent-pending whole-fish processing technology that converts 100% of every fish into premium food for human consumption, doubling yield and eliminating waste entirely.\n\nThis is not a startup searching for product-market fit. The market is our backyard. The relationships are already ours. The technology is proven. What we are building now is the bridge between the industry we know better than anyone, and the breakthrough that doubles its value.",
+      slogan: "20 years of commercial reality. One technology that changes everything.",
       missionTitle: "Our Mission",
       mission: "By using the entire animal — for human consumption — avoiding waste, pollution, and costs. Zero Waste. Zero Mortality. Zero Pollution. 100% Yield.",
       highlights: [
-        { value: "$500B", label: "Total Untapped Market" },
+        { value: "$640B", label: "Total Untapped Market" },
         { value: "100%", label: "Yield Utilization" },
         { value: "Patent", label: "Pending" },
         { value: "$5M", label: "Seed Round 2026" },
@@ -389,22 +402,10 @@ export const translations = {
       ],
       testimonials: [
         {
-          quote: "Ecource's approach to zero-waste fish processing is unlike anything we've seen. The yield numbers are extraordinary and the product quality speaks for itself.",
-          name: "Yoel Benesh",
-          role: "Food Tech Specialist",
-          initials: "YB",
-        },
-        {
           quote: "The combination of cost reduction and premium output in one integrated system is a genuine competitive moat. This is a structural advantage, not a marginal improvement.",
           name: "Tzach Frenkel & Aya Morg",
-          role: "Innovalley - The International Innovation Center for Agriculture, Aquaculture, Climate, and Industry",
+          role: "Innovalley — The International Innovation Center for Agriculture, Aquaculture, Climate, and Industry",
           initials: "TF",
-        },
-        {
-          quote: "We've evaluated dozens of agri-food innovations. Ecource stands out because the economics work at scale — not just in the lab.",
-          name: "Michael Stern",
-          role: "Senior Analyst, FoodTech Capital",
-          initials: "MS",
         },
       ],
       news: [

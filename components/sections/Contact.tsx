@@ -106,6 +106,31 @@ export default function Contact() {
             onSubmit={handleSubmit}
             className="bg-navy-800/60 border border-white/10 rounded-2xl p-8 space-y-5"
           >
+            {/* Quick-action buttons */}
+            <a
+              href="/ecource-executive-summary.pdf"
+              download
+              className="block w-full text-center py-3 px-4 border border-gold-500/60 text-gold-400 rounded-lg font-semibold text-sm hover:bg-gold-500/10 transition-colors"
+            >
+              ↓ Download Executive Summary (No NDA Required)
+            </a>
+            <p className="text-center text-white/40 text-xs -mt-2">
+              2-page overview · Technology · Market · Team · Investment terms
+            </p>
+            <a
+              href="CALENDLY_URL_HERE"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full text-center py-3 px-4 bg-gold-500 text-navy-900 rounded-lg font-semibold text-sm hover:bg-gold-400 transition-colors"
+            >
+              Book a 30-min Discovery Call
+            </a>
+            <div className="flex items-center gap-3 pt-1">
+              <div className="flex-1 border-t border-white/10" />
+              <span className="text-white/30 text-xs">or send a message</span>
+              <div className="flex-1 border-t border-white/10" />
+            </div>
+
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label className="text-xs text-white/50 mb-1.5 block font-medium uppercase tracking-wider">

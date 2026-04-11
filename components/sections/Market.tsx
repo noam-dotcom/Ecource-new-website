@@ -2,6 +2,13 @@
 
 import { useLanguage } from "@/contexts/LanguageContext";
 
+const METRIC_SOURCES = [
+  { label: "FAO SOFIA 2024", url: "https://www.fao.org/3/cd0683en/online/sofia/2024/world-fisheries-aquaculture-production.html" },
+  { label: "FAO/OECD 2024", url: "https://www.oecd.org/en/publications/oecd-fao-agricultural-outlook-2025-2034_601276cd-en/full-report/meat_5462e384.html" },
+  { label: "FAO/OECD 2024", url: "https://www.oecd.org/en/publications/oecd-fao-agricultural-outlook-2025-2034_601276cd-en/full-report/meat_5462e384.html" },
+  { label: "FAO/OECD 2024", url: "https://www.oecd.org/en/publications/oecd-fao-agricultural-outlook-2025-2034_601276cd-en/full-report/meat_5462e384.html" },
+];
+
 export default function Market() {
   const { t } = useLanguage();
   const m = t.market;
@@ -22,7 +29,7 @@ export default function Market() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mb-16">
-          {m.metrics.map((metric) => (
+          {m.metrics.map((metric, idx) => (
             <div
               key={metric.label}
               className="bg-navy-800/60 border border-white/10 rounded-2xl p-6 text-center hover:border-gold-500/30 transition-colors"
@@ -30,6 +37,16 @@ export default function Market() {
               <p className="text-4xl font-black gold-gradient mb-1">{metric.value}</p>
               <p className="text-white font-semibold text-sm mb-1">{metric.label}</p>
               <p className="text-white/40 text-xs">{metric.sub}</p>
+              {METRIC_SOURCES[idx] && (
+                <a
+                  href={METRIC_SOURCES[idx].url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gold-500/60 text-xs hover:text-gold-400 transition-colors mt-1 inline-block"
+                >
+                  [{METRIC_SOURCES[idx].label}]
+                </a>
+              )}
             </div>
           ))}
         </div>
@@ -43,7 +60,19 @@ export default function Market() {
                   <span className="mt-1 shrink-0 w-5 h-5 rounded-full bg-gold-500/20 flex items-center justify-center text-gold-400 text-xs">
                     ✓
                   </span>
-                  {d}
+                  <span>
+                    {d}
+                    {d.toLowerCase().includes("regulatory pressure") && (
+                      <a
+                        href="https://environment.ec.europa.eu/topics/waste-and-recycling/food-waste_en"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gold-500/60 text-xs hover:text-gold-400 transition-colors ml-1"
+                      >
+                        [EU source]
+                      </a>
+                    )}
+                  </span>
                 </li>
               ))}
             </ul>
