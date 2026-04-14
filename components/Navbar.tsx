@@ -25,7 +25,6 @@ export default function Navbar() {
     { href: "#team", label: t.nav.ourTeam, cta: false },
     { href: "#market", label: t.nav.market, cta: false },
     { href: "#products", label: t.nav.products, cta: false },
-    { href: "#media", label: t.nav.media, cta: false },
     { href: "#contact", label: t.nav.contactUs, cta: true },
   ];
 

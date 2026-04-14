@@ -7,7 +7,6 @@ import SDG from "@/components/sections/SDG";
 import Products from "@/components/sections/Products";
 import Market from "@/components/sections/Market";
 import Team from "@/components/sections/Team";
-import MediaHub from "@/components/sections/MediaHub";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/Footer";
 
@@ -23,7 +22,6 @@ export default function Home() {
       <Market />
       <Products />
       <Team />
-      <MediaHub />
       <Contact />
       <Footer />
     </main>

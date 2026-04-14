@@ -33,19 +33,14 @@ export default function Products() {
   return (
     <section
       id="products"
-      className="py-28 px-6 relative bg-navy-800 overflow-hidden"
+      className="parallax-bg py-28 px-6 relative bg-navy-800"
+      style={{
+        backgroundImage: "url('/products-bg.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
-      {/* Video background */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source src="/products-bg.mp4" type="video/mp4" />
-      </video>
-      <div className="absolute inset-0 bg-navy-900/65" />
+      <div className="absolute inset-0 bg-navy-900/50" />
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-gold-500 text-sm font-semibold uppercase tracking-widest mb-3">
