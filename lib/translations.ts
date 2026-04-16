@@ -476,21 +476,25 @@ export const translations = {
           title: "ייצור פירות ים — יעיל ב-50% בלבד",
           description:
             "פילוט מסורתי מחלץ רק 35–50% מכל דג לצריכה אנושית. עצמות, עור, ראש, סנפירים וקרביים — כ-50% מהדג, כ-60 מיליון טון בשנה — נזרקים, מיועדים לקמח דגים או למזון לחיות מחמד.",
+          sources: [],
         },
         {
           title: "רעב ומחסור במזון",
           description:
             "733 מיליון אנשים סובלים מרעב כרוני (FAO 2024). עד 2050 יהיו 9.7 מיליארד בני אדם. הייצור הקיים אינו יכול לסגור את הפער — ובמקביל אנחנו זורקים נפחי עצומים של מזון מזין מדי יום.",
+          sources: [],
         },
         {
           title: "תמותת ביקאץ' ומיון",
           description:
             "9.1 מיליון טון דגי ים בשנה נזרקים כביקאץ' (FAO 2024). דגים מחוץ לגדלי היעד סובלים מתמותה של למעלה מ-90% תוך 20–30 דקות מחוץ למים — נהרגים ונזרקים עקב סף גודל שרירותי.",
+          sources: [],
         },
         {
           title: "תמותה בחוות לפני הקציר",
           description:
             "דגי ים מגודלים ברחבי העולם מאבדים 8–15 מיליון טון בשנה לפני הקציר עקב מחלות, סטרס ותנאים לא מיטביים. סלמון נורווגי לבדו: 15–20% תמותה לפני השחיטה. דגים אלה מתים ולעולם לא הופכים למזון לצריכה אנושית.",
+          sources: [],
         },
       ],
       bigStatLabel:
@@ -912,21 +916,25 @@ export const translations = {
           title: "大量鱼类浪费",
           description:
             "传统加工方法仅利用每条鱼的40-50%。剩余的生物质——骨头、鱼头、鱼皮、内脏——被丢弃或以极低价值出售。",
+          sources: [],
         },
         {
           title: "野生种群减少",
           description:
             "全球野生捕捞渔业已达到或超过可持续限度。加工商必须从每次捕捞中提取最大价值才能保持经济可行性。",
+          sources: [],
         },
         {
           title: "物种和尺寸限制",
           description:
             "现有工业加工设备是为特定物种和尺寸范围设计的，使大量兼捕物和小鱼在商业上不可行。",
+          sources: [],
         },
         {
           title: "利润压力",
           description:
             "燃料、劳动力和合规成本上升压缩了加工商的利润空间。没有技术驱动的产量改善，盈利能力在结构上面临挑战。",
+          sources: [],
         },
       ],
       bigStatLabel:
@@ -1249,21 +1257,25 @@ export const translations = {
           title: "Enorme Desperdicio de Peces",
           description:
             "Los métodos de procesamiento tradicionales utilizan solo el 40-50% de cada pez. La biomasa restante — huesos, cabezas, piel, vísceras — se descarta o se vende a un valor mínimo.",
+          sources: [],
         },
         {
           title: "Declive de Poblaciones Silvestres",
           description:
             "Las pesquerías de captura silvestre global están en o más allá de los límites sostenibles. Los procesadores deben extraer el máximo valor de cada captura para seguir siendo económicamente viables.",
+          sources: [],
         },
         {
           title: "Limitaciones de Especie y Tamaño",
           description:
             "El equipo de procesamiento industrial existente está diseñado para especies y rangos de tamaño específicos, dejando volúmenes vastamente inviables de captura incidental y peces pequeños.",
+          sources: [],
         },
         {
           title: "Presión en los Márgenes",
           description:
             "Los costos crecientes de combustible, mano de obra y cumplimiento comprimen los márgenes de los procesadores. Sin mejoras de rendimiento impulsadas por tecnología, la rentabilidad es estructuralmente desafiante.",
+          sources: [],
         },
       ],
       bigStatLabel:
@@ -1606,21 +1618,25 @@ export const translations = {
           title: "La Production Seafood Est Inefficace à ~50 %",
           description:
             "Le filetage traditionnel ne récupère que 35 à 50 % de chaque poisson pour la consommation humaine. Les arêtes, la peau, la tête, les nageoires et les viscères — représentant ~50 % du poisson, soit environ 60 MT — sont jetés, transformés en farine de poisson ou utilisés en alimentation animale.",
+          sources: [],
         },
         {
           title: "Faim & Pénurie Alimentaire",
           description:
             "733 millions de personnes souffrent de faim chronique (FAO 2024). D'ici 2050, le monde comptera 9,7 milliards de personnes. La production actuelle ne peut pas combler le déficit protéique avec des méthodes conventionnelles — pourtant nous jetons chaque jour d'énormes volumes d'aliments très nutritifs.",
+          sources: [],
         },
         {
           title: "Prises Accessoires & Mortalité au Tri",
           description:
             "9,1 MT/an de poissons marins sont rejetés comme prises accessoires (FAO 2024). Les poissons hors taille cible font face à une mortalité >90 % après 20 à 30 minutes hors de l'eau — tués et rejetés en raison d'un seuil de taille arbitraire.",
+          sources: [],
         },
         {
           title: "Mortalité en Élevage Avant Récolte",
           description:
             "Les poissons d'élevage dans le monde perdent 8 à 15 MT/an avant récolte à cause de maladies, du stress et de conditions sous-optimales. Le saumon norvégien seul : 15 à 20 % de mortalité avant l'abattage. Ces poissons meurent sans jamais atteindre la consommation humaine.",
+          sources: [],
         },
       ],
       bigStatLabel:
