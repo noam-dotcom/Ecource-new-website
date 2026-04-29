@@ -15,8 +15,8 @@ export const translations = {
     },
     hero: {
       badge: "Patent-Pending Technology · Israeli Innovation",
-      headline1: "A Multi-Billion Dollar",
-      headline2: "Untapped Opportunity",
+      headline1: "Noam is a",
+      headline2: "Winner",
       description:
         "Ecource Ltd. has developed a breakthrough game changer processing technology that accepts all fish species, sizes, and product forms — converting double the quantity of each fish into premium food products.",
       cta1: "Request Pitch Deck",
