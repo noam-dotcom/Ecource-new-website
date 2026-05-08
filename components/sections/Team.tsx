@@ -10,7 +10,7 @@ const TEAM_PHOTOS: Record<number, string> = {
   2: "/team/team-bogie.png",
   3: "/team/team-doron.png",
   4: "/team/team-drtal.png",
-  // 5: "/team/team-avner.png" — add when photo is available
+  5: "/team/team-avner.png",
 };
 
 export default function Team() {
