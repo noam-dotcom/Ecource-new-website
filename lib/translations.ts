@@ -296,7 +296,7 @@ export const translations = {
         },
         {
           name: "Doron Cohen",
-          role: "Food Commercialization",
+          role: "Food Engineer",
           bio: "40+ years in R&D and commercialization of meat and fish products. Former Technology Director at Frutarom/IFF Israel. Leads product development and product-market fit strategy.",
           initials: "DC",
         },
@@ -724,7 +724,7 @@ export const translations = {
         },
         {
           name: "דורון כהן",
-          role: "קומרציאליזציה של מזון",
+          role: "מהנדס מזון",
           bio: "40+ שנות ניסיון במחקר, פיתוח וקומרציאליזציה של מוצרי בשר ודגים. מנהל טכנולוגיה לשעבר ב-Frutarom/IFF ישראל. מוביל אסטרטגיית התאמת מוצר-שוק.",
           initials: "DC",
         },
@@ -1112,7 +1112,7 @@ export const translations = {
         },
         {
           name: "Doron Cohen",
-          role: "食品技术",
+          role: "食品工程师",
           bio: "食品技术专家，推动Ecource创新加工解决方案的研发和产品开发。",
           initials: "DC",
         },
@@ -1469,7 +1469,7 @@ export const translations = {
         },
         {
           name: "Doron Cohen",
-          role: "FoodTech",
+          role: "Ingeniero Alimentario",
           bio: "Especialista en tecnología alimentaria que impulsa la I+D y el desarrollo de productos innovadores de Ecource.",
           initials: "DC",
         },
@@ -1866,7 +1866,7 @@ export const translations = {
         },
         {
           name: "Doron Cohen",
-          role: "Commercialisation Alimentaire",
+          role: "Ingénieur Alimentaire",
           bio: "40+ ans en R&D et commercialisation de produits à base de viande et de poisson. Ancien Directeur Technologique chez Frutarom/IFF Israël. Dirige le développement produit et la stratégie d'adéquation produit-marché.",
           initials: "DC",
         },
