@@ -28,7 +28,7 @@ export function StickyInvestorBar() {
     }}>
       <span style={{ color: '#fff', fontSize: '0.85rem' }}>
         <strong style={{ color: '#f59e0b' }}>$5M Seed Round Open</strong>
-        {' · '}Patent Pending · 40 Countries
+        {' · '}Patent Pending · 32 Countries
       </span>
       <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
         <a

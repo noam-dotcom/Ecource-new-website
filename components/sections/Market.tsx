@@ -2,9 +2,9 @@
 
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const METRIC_SOURCES = [
+const METRIC_SOURCES: ({ label: string; url: string } | null)[] = [
   { label: "FAO SOFIA 2024", url: "https://www.fao.org/3/cd0683en/online/sofia/2024/world-fisheries-aquaculture-production.html" },
-  { label: "FAO/OECD 2024", url: "https://www.oecd.org/en/publications/oecd-fao-agricultural-outlook-2025-2034_601276cd-en/full-report/meat_5462e384.html" },
+  null,
   { label: "FAO/OECD 2024", url: "https://www.oecd.org/en/publications/oecd-fao-agricultural-outlook-2025-2034_601276cd-en/full-report/meat_5462e384.html" },
   { label: "FAO/OECD 2024", url: "https://www.oecd.org/en/publications/oecd-fao-agricultural-outlook-2025-2034_601276cd-en/full-report/meat_5462e384.html" },
 ];

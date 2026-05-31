@@ -25,7 +25,7 @@ export const translations = {
       stat1Label: "Yield Per Fish",
       stat2Value: "100%",
       stat2Label: "Any Species · Any Size · Any Production Form",
-      stat3Value: "40+",
+      stat3Value: "32",
       stat3Label: "Countries Patent Filed",
     },
     problem: {
@@ -79,7 +79,7 @@ export const translations = {
       para1:
         "Ecource has engineered a proprietary processing technology that fundamentally changes the economics of fish processing. Instead of discarding 50–65% of every fish, our system converts the full biomass into high-value food products — effectively doubling the yield from every tonne processed. The technology is species-agnostic and size-independent, making it deployable across the full spectrum of global fisheries worldwide.",
       para2:
-        "Fish is where our story began. Rooted in the founder's 25 years of hands-on experience across the seafood and aquaculture markets, Ecource was built from the inside out — by someone who understood the industry's inefficiencies firsthand and was determined to solve them at their core. As the technology matured and proved itself, its potential became clear far beyond the water: we have since developed and adapted our whole-biomass processing system for Poultry, Beef, and Pork as well — bringing the same zero-waste, maximum-yield transformation to the broader protein industry.",
+        "Fish is where our story began. Rooted in the founder's 20+ years of hands-on experience across the full seafood supply chain — from wild-capture fisheries and aquaculture to processing and global distribution — Ecource was built from the inside out by someone who understood the industry's inefficiencies firsthand and was determined to solve them at their core. Our technology is species-agnostic and size-independent, deployable across the full spectrum of global fisheries — from Norwegian salmon farms to artisanal trawlers in Southeast Asia.",
       linkText: "Request confidential technology overview →",
       features: [
         {
@@ -100,7 +100,7 @@ export const translations = {
         {
           title: "Patent-Pending Protection",
           description:
-            "Our core processing methodology & products are protected by a pending patents, in 40 countries, providing a durable competitive moat for Ecource and its partners.",
+            "Our core processing methodology & products are protected by a pending patents, in 32 countries, providing a durable competitive moat for Ecource and its partners.",
         },
       ],
       traditional: {
@@ -230,7 +230,7 @@ export const translations = {
       headline1: "A Multi-Billion Dollar",
       headline2: "Untapped Opportunity",
       description:
-        "Ecource targets the global animal biomass processing industry — a market spanning Seafood, Poultry, Beef, and Pork. Across every protein category, conventional processing discards 35–65% of every animal. Ecource sits at the intersection of food security, sustainability, and technology — unlocking the full value of the biomass that the industry currently throws away.",
+        "Seafood is where Ecource was born — and where our expertise runs 20+ years deep, spanning the full supply chain from wild-capture and aquaculture to processing and global distribution. Our primary focus is firmly on seafood. Beyond seafood, our technology is already proven and ready for two additional massive untapped markets — Poultry and Beef — industries facing the exact same structural inefficiency and actively seeking exactly this kind of solution.",
       metrics: [
         {
           value: "$250B/Year",
@@ -238,35 +238,35 @@ export const translations = {
           sub: "~80MT/Year estimated underutilized biomass · Derived from FAO SOFIA 2024 total production data",
         },
         {
+          value: "20+",
+          label: "Years Seafood Supply Chain Expertise",
+          sub: "End-to-end experience: wild-capture · aquaculture · processing · global distribution",
+        },
+        {
           value: "$120B/Year",
           label: "Untapped Poultry Market",
-          sub: "~44MT/Year estimated underutilized biomass · Derived from FAO/OECD 2024 production data",
+          sub: "~44MT/Year estimated underutilized biomass · Next-phase expansion opportunity",
         },
         {
           value: "$180B/Year",
           label: "Untapped Beef Market",
-          sub: "~30MT/Year estimated underutilized biomass · Derived from FAO/OECD 2024 production data",
-        },
-        {
-          value: "$90B/Year",
-          label: "Untapped Pork Market",
-          sub: "~36MT/Year estimated underutilized biomass · Derived from FAO/OECD 2024 production data",
+          sub: "~30MT/Year estimated underutilized biomass · Next-phase expansion opportunity",
         },
       ],
-      driversTitle: "Why the Whole Biomass Industry Is Ready for Disruption",
+      driversTitle: "Why the Global Seafood Industry — And Beyond — Is Ready for Disruption",
       drivers: [
-        "733 million people are chronically hungry — conventional processing discards up to 65% of every Seafood, Poultry, Beef, and Pork animal processed",
-        "Global animal protein production exceeds 500 MT/year across Seafood, Poultry, Beef, and Pork — with more than half the biomass value lost to waste",
-        "Regulatory pressure to eliminate organic waste and reduce emissions is tightening across EU, US, and Asian markets for all protein categories",
-        "Consumer and institutional demand for clean-label, nutrient-dense, sustainably produced food is accelerating across all animal protein categories",
-        "ESG mandates and carbon credit frameworks reward measurable, large-scale waste elimination — directly rewarding the Ecource model",
+        "733 million people are chronically hungry — conventional processing discards up to 65% of every fish processed worldwide",
+        "Global seafood production exceeds 180 MT/year — yet conventional methods waste more than half the biomass value in every catch",
+        "Regulatory pressure to eliminate organic waste and reduce emissions is tightening across EU, US, and Asian seafood markets",
+        "Consumer and institutional demand for clean-label, nutrient-dense, sustainably produced seafood is accelerating globally",
+        "ESG mandates and carbon credit frameworks reward measurable, large-scale waste elimination — directly rewarding the Ecource model across Seafood, Poultry, and Beef",
       ],
       whyNowTitle: "Why Now?",
       whyNow:
-        "The convergence of global protein demand, rising sustainability mandates, and the structural inefficiency of conventional biomass processing across Seafood, Poultry, Beef, and Pork has created a perfect window for disruptive technology. Ecource is production-ready.",
+        "The convergence of global protein demand, rising sustainability mandates, and the structural inefficiency of conventional seafood processing has created a perfect window for disruptive technology. Our 20+ years of supply chain expertise positioned us to build the solution the industry has been waiting for — and with that same technology already proven for Poultry and Beef, Ecource is uniquely positioned to scale across the full animal protein value chain. Ecource is production-ready.",
       whyEcourceTitle: "Why Ecource?",
       whyEcource:
-        "We are the only company with a patent-pending technology capable of processing any species and size — Seafood, Poultry, Beef, and Pork — into premium food products with 100% biomass utilization and zero waste. This is not an incremental improvement; it is a structural shift in how the world processes animal protein.",
+        "We are the only company with 20+ years of end-to-end seafood supply chain expertise combined with a patent-pending technology capable of processing any species and size into premium food products — with 100% biomass utilization and zero waste. Beyond seafood, the same breakthrough technology is already adapted for Poultry and Beef — two additional billion-dollar industries actively seeking this exact solution. This is not an incremental improvement; it is a structural shift in how the world processes animal protein.",
       callLink: "Schedule an investor call →",
     },
     team: {
@@ -658,27 +658,27 @@ export const translations = {
       headline1: "הזדמנות של מיליארדי דולרים",
       headline2: "שעדיין לא נוצלה",
       description:
-        "דגי ים הם המגזר הדומיננטי בשוק פירות הים העולמי. Ecource נמצאת בצומת בין ביטחון מזון, קיימות וטכנולוגיה — ומכוונת לכל קטגוריית הדגים.",
+        "פירות ים הם הלב של Ecource — כאן הצטבר הניסיון של 20+ שנות פעילות לאורך כל שרשרת האספקה, מדייג פראי ואקוואקולטורה ועד עיבוד והפצה גלובלית. מעבר לדגים, הטכנולוגיה שלנו כבר הוכחה ומוכנה לשתי שווקים עצומים נוספים — עוף ובקר — תעשיות המחפשות בדיוק את הפתרון שלנו.",
       metrics: [
         {
-          value: "~$102B",
-          label: "פוטנציאל בלתי מנוצל — דגי ים",
+          value: "~$250B",
+          label: "פוטנציאל בלתי מנוצל — פירות ים",
           sub: "2024 · מקור: FAO SOFIA 2024",
         },
         {
-          value: "~$82B",
-          label: "פוטנציאל בלתי מנוצל — עוף",
-          sub: "2024 · מקור: FAO / OECD",
+          value: "20+",
+          label: "שנות מומחיות בשרשרת אספקת פירות הים",
+          sub: "ניסיון מקיף: דיג · אקוואקולטורה · עיבוד · הפצה גלובלית",
         },
         {
-          value: "~$152B",
-          label: "פוטנציאל בלתי מנוצל — חזיר",
-          sub: "2024 · מקור: FAO / OECD",
+          value: "~$120B",
+          label: "פוטנציאל בלתי מנוצל — עוף",
+          sub: "הזדמנות הרחבה לשלב הבא · מקור: FAO / OECD",
         },
         {
           value: "$180B",
           label: "פוטנציאל בלתי מנוצל — בקר",
-          sub: "2024 · מקור: FAO / OECD",
+          sub: "הזדמנות הרחבה לשלב הבא · מקור: FAO / OECD",
         },
       ],
       driversTitle: "מניעי שוק מרכזיים",
@@ -1049,24 +1049,24 @@ export const translations = {
         "全球鱼类加工行业已准备好接受颠覆。Ecource处于食品安全、可持续发展和技术的交汇处。",
       metrics: [
         {
-          value: "~$102B",
-          label: "未开发鳍鱼市场",
+          value: "~$250B",
+          label: "未开发海鲜市场",
           sub: "2024 · 来源：FAO SOFIA 2024",
         },
         {
-          value: "~$82B",
-          label: "未开发家禽市场",
-          sub: "2024 · 来源：FAO / OECD",
+          value: "20+",
+          label: "年海鲜供应链专业经验",
+          sub: "全链条经验：捕捞 · 水产养殖 · 加工 · 全球分销",
         },
         {
-          value: "~$152B",
-          label: "未开发猪肉市场",
-          sub: "2024 · 来源：FAO / OECD",
+          value: "~$120B",
+          label: "未开发家禽市场",
+          sub: "下一阶段扩张机会 · 来源：FAO / OECD",
         },
         {
           value: "$180B",
           label: "未开发牛肉市场",
-          sub: "2024 · 来源：FAO / OECD",
+          sub: "下一阶段扩张机会 · 来源：FAO / OECD",
         },
       ],
       driversTitle: "主要市场驱动因素",
@@ -1406,24 +1406,24 @@ export const translations = {
         "La industria global de procesamiento de peces está lista para la disrupción. Ecource se encuentra en la intersección de la seguridad alimentaria, la sostenibilidad y la tecnología.",
       metrics: [
         {
-          value: "~$102B",
-          label: "Mercado Piscícola Sin Explotar",
+          value: "~$250B",
+          label: "Mercado Pesquero Sin Explotar",
           sub: "2024 · Fuente: FAO SOFIA 2024",
         },
         {
-          value: "~$82B",
-          label: "Mercado Avícola Sin Explotar",
-          sub: "2024 · Fuente: FAO / OECD",
+          value: "20+",
+          label: "Años de Experiencia en la Cadena de Suministro Pesquero",
+          sub: "Experiencia integral: pesca · acuicultura · procesamiento · distribución global",
         },
         {
-          value: "~$152B",
-          label: "Mercado Porcino Sin Explotar",
-          sub: "2024 · Fuente: FAO / OECD",
+          value: "~$120B",
+          label: "Mercado Avícola Sin Explotar",
+          sub: "Oportunidad de expansión — siguiente fase · Fuente: FAO / OECD",
         },
         {
           value: "$180B",
           label: "Mercado Bovino Sin Explotar",
-          sub: "2024 · Fuente: FAO / OECD",
+          sub: "Oportunidad de expansión — siguiente fase · Fuente: FAO / OECD",
         },
       ],
       driversTitle: "Principales Impulsores del Mercado",
@@ -1803,24 +1803,24 @@ export const translations = {
         "Le poisson est le segment dominant du marché mondial des fruits de mer. Ecource se situe à l'intersection de la sécurité alimentaire, de la durabilité et de la technologie — ciblant l'ensemble de la catégorie des poissons.",
       metrics: [
         {
-          value: "~$102B",
-          label: "Potentiel Inexploité — Poisson",
+          value: "~$250B",
+          label: "Potentiel Inexploité — Fruits de Mer",
           sub: "2024 · Source : FAO SOFIA 2024",
         },
         {
-          value: "~$82B",
-          label: "Potentiel Inexploité — Volaille",
-          sub: "2024 · Source : FAO / OCDE",
+          value: "20+",
+          label: "Ans d'Expertise en Chaîne d'Approvisionnement",
+          sub: "Expérience complète : pêche · aquaculture · transformation · distribution mondiale",
         },
         {
-          value: "~$152B",
-          label: "Potentiel Inexploité — Porc",
-          sub: "2024 · Source : FAO / OCDE",
+          value: "~$120B",
+          label: "Potentiel Inexploité — Volaille",
+          sub: "Opportunité d'expansion — prochaine phase · Source : FAO / OCDE",
         },
         {
           value: "$180B",
           label: "Potentiel Inexploité — Bœuf",
-          sub: "2024 · Source : FAO / OCDE",
+          sub: "Opportunité d'expansion — prochaine phase · Source : FAO / OCDE",
         },
       ],
       driversTitle: "Principaux Moteurs du Marché",

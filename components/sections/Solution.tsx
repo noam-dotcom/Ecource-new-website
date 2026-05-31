@@ -40,9 +40,7 @@ export default function Solution() {
               {s.para1}
             </p>
             <p className="text-white/60 text-lg leading-relaxed mb-6">
-              {s.para2.split("Poultry, Beef, and Pork")[0]}
-              <strong className="text-white">Poultry, Beef, and Pork</strong>
-              {s.para2.split("Poultry, Beef, and Pork")[1]}
+              {s.para2}
             </p>
             <a
               href="#contact"
