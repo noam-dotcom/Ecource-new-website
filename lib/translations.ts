@@ -233,9 +233,9 @@ export const translations = {
         "Seafood is where Ecource was born — and where our expertise runs 20+ years deep, spanning the full supply chain from wild-capture and aquaculture to processing and global distribution. Our primary focus is firmly on seafood. Beyond seafood, our technology is already proven and ready for two additional massive untapped markets — Poultry and Beef — industries facing the exact same structural inefficiency and actively seeking exactly this kind of solution.",
       metrics: [
         {
-          value: "$250B/Year",
+          value: "$130B/Year",
           label: "Untapped Seafood Market",
-          sub: "~80MT/Year estimated underutilized biomass · Derived from FAO SOFIA 2024 total production data",
+          sub: "~65MT/Year underutilized biomass · FAO SOFIA 2024 production data + $2/kg food-grade price basis",
         },
         {
           value: "20+",
@@ -243,14 +243,14 @@ export const translations = {
           sub: "End-to-end experience: wild-capture · aquaculture · processing · global distribution",
         },
         {
-          value: "$120B/Year",
+          value: "$50B/Year",
           label: "Untapped Poultry Market",
-          sub: "~44MT/Year estimated underutilized biomass · Next-phase expansion opportunity",
+          sub: "~69MT/Year processing by-products · FAO Food Outlook 2024 + USDA FAS + peer-reviewed yield data",
         },
         {
-          value: "$180B/Year",
+          value: "$30B/Year",
           label: "Untapped Beef Market",
-          sub: "~30MT/Year estimated underutilized biomass · Next-phase expansion opportunity",
+          sub: "~21MT/Year recoverable by-products · USDA FAS 2023 + USDA ERS + Frontiers 2024",
         },
       ],
       driversTitle: "Why the Global Seafood Industry — And Beyond — Is Ready for Disruption",
@@ -363,7 +363,7 @@ export const translations = {
       missionTitle: "Our Mission",
       mission: "By using the entire animal — for human consumption — avoiding waste, pollution, and costs. Zero Waste. Zero Mortality. Zero Pollution. 100% Yield.",
       highlights: [
-        { value: "$250B", label: "Untapped Seafood Market" },
+        { value: "$130B", label: "Untapped Seafood Market" },
         { value: "100%", label: "Yield Utilization" },
         { value: "Patent", label: "Pending" },
         { value: "Zero Waste", label: "Circular Economy Model" },
@@ -661,9 +661,9 @@ export const translations = {
         "פירות ים הם הלב של Ecource — כאן הצטבר הניסיון של 20+ שנות פעילות לאורך כל שרשרת האספקה, מדייג פראי ואקוואקולטורה ועד עיבוד והפצה גלובלית. מעבר לדגים, הטכנולוגיה שלנו כבר הוכחה ומוכנה לשתי שווקים עצומים נוספים — עוף ובקר — תעשיות המחפשות בדיוק את הפתרון שלנו.",
       metrics: [
         {
-          value: "~$250B",
+          value: "$130B",
           label: "פוטנציאל בלתי מנוצל — פירות ים",
-          sub: "2024 · מקור: FAO SOFIA 2024",
+          sub: "~65MT/שנה ביומסה שאינה מנוצלת · FAO SOFIA 2024",
         },
         {
           value: "20+",
@@ -671,14 +671,14 @@ export const translations = {
           sub: "ניסיון מקיף: דיג · אקוואקולטורה · עיבוד · הפצה גלובלית",
         },
         {
-          value: "~$120B",
+          value: "$50B",
           label: "פוטנציאל בלתי מנוצל — עוף",
-          sub: "הזדמנות הרחבה לשלב הבא · מקור: FAO / OECD",
+          sub: "~69MT/שנה תוצרי לוואי · FAO Food Outlook 2024 + USDA FAS",
         },
         {
-          value: "$180B",
+          value: "$30B",
           label: "פוטנציאל בלתי מנוצל — בקר",
-          sub: "הזדמנות הרחבה לשלב הבא · מקור: FAO / OECD",
+          sub: "~21MT/שנה ניתן לשחזור · USDA FAS 2023 + Frontiers 2024",
         },
       ],
       driversTitle: "מניעי שוק מרכזיים",
@@ -791,7 +791,7 @@ export const translations = {
       missionTitle: "המשימה שלנו",
       mission: "על ידי שימוש בכל החיה — לצריכה אנושית — תוך הימנעות מבזבוז, זיהום ועלויות. אפס פסולת. אפס תמותה. אפס זיהום. תפוקה של 100%.",
       highlights: [
-        { value: "$250B", label: "שוק פירות הים הבלתי מנוצל" },
+        { value: "$130B", label: "שוק פירות הים הבלתי מנוצל" },
         { value: "100%", label: "ניצול תפוקה" },
         { value: "פטנט", label: "בתהליך" },
         { value: "אפס פסולת", label: "מודל כלכלה מעגלית" },
@@ -1049,9 +1049,9 @@ export const translations = {
         "全球鱼类加工行业已准备好接受颠覆。Ecource处于食品安全、可持续发展和技术的交汇处。",
       metrics: [
         {
-          value: "~$250B",
+          value: "$130B",
           label: "未开发海鲜市场",
-          sub: "2024 · 来源：FAO SOFIA 2024",
+          sub: "~65MT/年未充分利用的生物质 · FAO SOFIA 2024",
         },
         {
           value: "20+",
@@ -1059,14 +1059,14 @@ export const translations = {
           sub: "全链条经验：捕捞 · 水产养殖 · 加工 · 全球分销",
         },
         {
-          value: "~$120B",
+          value: "$50B",
           label: "未开发家禽市场",
-          sub: "下一阶段扩张机会 · 来源：FAO / OECD",
+          sub: "~69MT/年加工副产品 · FAO Food Outlook 2024 + USDA FAS",
         },
         {
-          value: "$180B",
+          value: "$30B",
           label: "未开发牛肉市场",
-          sub: "下一阶段扩张机会 · 来源：FAO / OECD",
+          sub: "~21MT/年可回收副产品 · USDA FAS 2023 + Frontiers 2024",
         },
       ],
       driversTitle: "主要市场驱动因素",
@@ -1178,7 +1178,7 @@ export const translations = {
       missionTitle: "我们的使命",
       mission: "通过实现每条鱼的全面商业利用，在全球范围内消除鱼类浪费——为子孙后代创造更高效、更可持续、更有利可图的海鲜产业。",
       highlights: [
-        { value: "~2500亿$", label: "未开发海鲜市场" },
+        { value: "~1300亿$", label: "未开发海鲜市场" },
         { value: "100%", label: "生物质利用率" },
         { value: "专利", label: "申请中" },
         { value: "零废弃", label: "循环经济模式" },
@@ -1406,9 +1406,9 @@ export const translations = {
         "La industria global de procesamiento de peces está lista para la disrupción. Ecource se encuentra en la intersección de la seguridad alimentaria, la sostenibilidad y la tecnología.",
       metrics: [
         {
-          value: "~$250B",
+          value: "$130B",
           label: "Mercado Pesquero Sin Explotar",
-          sub: "2024 · Fuente: FAO SOFIA 2024",
+          sub: "~65MT/año biomasa no aprovechada · FAO SOFIA 2024",
         },
         {
           value: "20+",
@@ -1416,14 +1416,14 @@ export const translations = {
           sub: "Experiencia integral: pesca · acuicultura · procesamiento · distribución global",
         },
         {
-          value: "~$120B",
+          value: "$50B",
           label: "Mercado Avícola Sin Explotar",
-          sub: "Oportunidad de expansión — siguiente fase · Fuente: FAO / OECD",
+          sub: "~69MT/año subproductos de procesamiento · FAO Food Outlook 2024 + USDA FAS",
         },
         {
-          value: "$180B",
+          value: "$30B",
           label: "Mercado Bovino Sin Explotar",
-          sub: "Oportunidad de expansión — siguiente fase · Fuente: FAO / OECD",
+          sub: "~21MT/año subproductos recuperables · USDA FAS 2023 + Frontiers 2024",
         },
       ],
       driversTitle: "Principales Impulsores del Mercado",
@@ -1538,7 +1538,7 @@ export const translations = {
       missionTitle: "Nuestra Misión",
       mission: "Eliminar el desperdicio de peces a nivel mundial habilitando la plena utilización comercial de cada pez, creando una industria pesquera más eficiente, sostenible y rentable para las generaciones venideras.",
       highlights: [
-        { value: "$250B", label: "Mercado Pesquero Sin Explotar" },
+        { value: "$130B", label: "Mercado Pesquero Sin Explotar" },
         { value: "100%", label: "Utilización de Biomasa" },
         { value: "Patente", label: "Pendiente" },
         { value: "Cero Residuos", label: "Modelo de Economía Circular" },
@@ -1803,9 +1803,9 @@ export const translations = {
         "Le poisson est le segment dominant du marché mondial des fruits de mer. Ecource se situe à l'intersection de la sécurité alimentaire, de la durabilité et de la technologie — ciblant l'ensemble de la catégorie des poissons.",
       metrics: [
         {
-          value: "~$250B",
+          value: "~130 Md$",
           label: "Potentiel Inexploité — Fruits de Mer",
-          sub: "2024 · Source : FAO SOFIA 2024",
+          sub: "~65MT/an de biomasse sous-utilisée · FAO SOFIA 2024",
         },
         {
           value: "20+",
@@ -1813,14 +1813,14 @@ export const translations = {
           sub: "Expérience complète : pêche · aquaculture · transformation · distribution mondiale",
         },
         {
-          value: "~$120B",
+          value: "~50 Md$",
           label: "Potentiel Inexploité — Volaille",
-          sub: "Opportunité d'expansion — prochaine phase · Source : FAO / OCDE",
+          sub: "~69MT/an de sous-produits · FAO Food Outlook 2024 + USDA FAS",
         },
         {
-          value: "$180B",
+          value: "~30 Md$",
           label: "Potentiel Inexploité — Bœuf",
-          sub: "Opportunité d'expansion — prochaine phase · Source : FAO / OCDE",
+          sub: "~21MT/an de sous-produits récupérables · USDA FAS 2023 + Frontiers 2024",
         },
       ],
       driversTitle: "Principaux Moteurs du Marché",
@@ -1933,7 +1933,7 @@ export const translations = {
       missionTitle: "Notre Mission",
       mission: "En utilisant l'animal entier — pour la consommation humaine — en évitant le gaspillage, la pollution et les coûts. Zéro Déchet. Zéro Mortalité. Zéro Pollution. 100 % de Rendement.",
       highlights: [
-        { value: "~250 Md$", label: "Marché des Fruits de Mer Inexploité" },
+        { value: "~130 Md$", label: "Marché des Fruits de Mer Inexploité" },
         { value: "100 %", label: "Utilisation du Rendement" },
         { value: "Brevet", label: "En Cours" },
         { value: "Zéro Déchet", label: "Modèle d'Économie Circulaire" },

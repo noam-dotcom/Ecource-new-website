@@ -67,7 +67,7 @@ export default function Problem() {
         </div>
 
         <div className="mt-14 bg-gradient-to-r from-gold-500/10 to-transparent border border-gold-500/20 rounded-2xl p-8 text-center">
-          <p className="text-5xl font-black gold-gradient mb-2">$250B+</p>
+          <p className="text-5xl font-black gold-gradient mb-2">$130B+</p>
           <p className="text-white/60 text-lg">{p.bigStatLabel}</p>
         </div>
       </div>

@@ -79,7 +79,23 @@
       "WebFetch(domain:www.ers.usda.gov)",
       "WebFetch(domain:ers.usda.gov)",
       "WebFetch(domain:www.nationalchickencouncil.org)",
-      "WebFetch(domain:ourworldindata.org)"
+      "WebFetch(domain:ourworldindata.org)",
+      "WebFetch(domain:fred.stlouisfed.org)",
+      "WebFetch(domain:www.indexmundi.com)",
+      "WebFetch(domain:avinews.com)",
+      "WebFetch(domain:www.ams.usda.gov)",
+      "WebFetch(domain:www.extension.iastate.edu)",
+      "WebFetch(domain:apps.fas.usda.gov)",
+      "WebFetch(domain:www.thecattlesite.com)",
+      "WebFetch(domain:ycharts.com)",
+      "WebFetch(domain:www.wattagnet.com)",
+      "WebFetch(domain:www.fas.usda.gov)",
+      "WebFetch(domain:www.feedlotmagazine.com)",
+      "WebFetch(domain:downloads.usda.library.cornell.edu)",
+      "WebFetch(domain:esmis.nal.usda.gov)",
+      "WebFetch(domain:www.farmprogress.com)",
+      "WebFetch(domain:www.brownfieldagnews.com)",
+      "WebFetch(domain:www.economyinsights.com)"
     ]
   }
 }
