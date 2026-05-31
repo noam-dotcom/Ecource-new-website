@@ -363,10 +363,10 @@ export const translations = {
       missionTitle: "Our Mission",
       mission: "By using the entire animal — for human consumption — avoiding waste, pollution, and costs. Zero Waste. Zero Mortality. Zero Pollution. 100% Yield.",
       highlights: [
-        { value: "$640B", label: "Total Untapped Market" },
+        { value: "$250B", label: "Untapped Seafood Market" },
         { value: "100%", label: "Yield Utilization" },
         { value: "Patent", label: "Pending" },
-        { value: "$5M", label: "Seed Round 2026" },
+        { value: "Zero Waste", label: "Circular Economy Model" },
       ],
     },
     media: {
@@ -791,10 +791,10 @@ export const translations = {
       missionTitle: "המשימה שלנו",
       mission: "על ידי שימוש בכל החיה — לצריכה אנושית — תוך הימנעות מבזבוז, זיהום ועלויות. אפס פסולת. אפס תמותה. אפס זיהום. תפוקה של 100%.",
       highlights: [
-        { value: "~$350B", label: "שוק דגים" },
+        { value: "$250B", label: "שוק פירות הים הבלתי מנוצל" },
         { value: "100%", label: "ניצול תפוקה" },
         { value: "פטנט", label: "בתהליך" },
-        { value: "$5M", label: "סיד 2026" },
+        { value: "אפס פסולת", label: "מודל כלכלה מעגלית" },
       ],
     },
     media: {
@@ -1178,10 +1178,10 @@ export const translations = {
       missionTitle: "我们的使命",
       mission: "通过实现每条鱼的全面商业利用，在全球范围内消除鱼类浪费——为子孙后代创造更高效、更可持续、更有利可图的海鲜产业。",
       highlights: [
-        { value: "以色列", label: "总部" },
-        { value: "深科技", label: "类别" },
+        { value: "~2500亿$", label: "未开发海鲜市场" },
+        { value: "100%", label: "生物质利用率" },
         { value: "专利", label: "申请中" },
-        { value: "$900亿+", label: "机会" },
+        { value: "零废弃", label: "循环经济模式" },
       ],
     },
     media: {
@@ -1538,10 +1538,10 @@ export const translations = {
       missionTitle: "Nuestra Misión",
       mission: "Eliminar el desperdicio de peces a nivel mundial habilitando la plena utilización comercial de cada pez, creando una industria pesquera más eficiente, sostenible y rentable para las generaciones venideras.",
       highlights: [
-        { value: "Israel", label: "Sede" },
-        { value: "Deep-Tech", label: "Categoría" },
+        { value: "$250B", label: "Mercado Pesquero Sin Explotar" },
+        { value: "100%", label: "Utilización de Biomasa" },
         { value: "Patente", label: "Pendiente" },
-        { value: "$90B+", label: "Oportunidad" },
+        { value: "Cero Residuos", label: "Modelo de Economía Circular" },
       ],
     },
     media: {
@@ -1933,10 +1933,10 @@ export const translations = {
       missionTitle: "Notre Mission",
       mission: "En utilisant l'animal entier — pour la consommation humaine — en évitant le gaspillage, la pollution et les coûts. Zéro Déchet. Zéro Mortalité. Zéro Pollution. 100 % de Rendement.",
       highlights: [
-        { value: "~205 Md$", label: "Marché du Poisson" },
+        { value: "~250 Md$", label: "Marché des Fruits de Mer Inexploité" },
         { value: "100 %", label: "Utilisation du Rendement" },
         { value: "Brevet", label: "En Cours" },
-        { value: "5 M$", label: "Tour d'Amorçage 2026" },
+        { value: "Zéro Déchet", label: "Modèle d'Économie Circulaire" },
       ],
     },
     media: {

@@ -68,7 +68,18 @@
       "Read(//c/Users/97252/**)",
       "Bash(/c/Users/97252/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.1-full_build/bin/ffmpeg.exe -y -i 'C:\\\\Users\\\\97252\\\\OneDrive - ISC\\\\Developer\\\\Ecource new website\\\\Ecource-new-website\\\\public\\\\hero-bg.mp4' -t 5 -vf scale=1280:720,fps=30 -c:v libx264 -preset fast -crf 23 -an 'C:\\\\Users\\\\97252\\\\AppData\\\\Local\\\\Temp/clip1.mp4')",
       "Bash(/c/Users/97252/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.1-full_build/bin/ffmpeg.exe -y -ss 00:00:51 -i 'c:\\\\Users\\\\97252\\\\Dropbox\\\\Pasta Del Mar\\\\Marketing\\\\Designs\\\\Movies\\\\Nimrod\\\\Pasta Del Mar - Master 720P.mp4' -t 3 -vf scale=1280:720,fps=30 -c:v libx264 -preset fast -crf 23 -an 'C:\\\\Users\\\\97252\\\\AppData\\\\Local\\\\Temp/clip2.mp4')",
-      "Bash(/c/Users/97252/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.1-full_build/bin/ffmpeg.exe -y -f concat -safe 0 -i 'C:\\\\Users\\\\97252\\\\AppData\\\\Local\\\\Temp/concat.txt' -c copy 'C:\\\\Users\\\\97252\\\\OneDrive - ISC\\\\Developer\\\\Ecource new website\\\\Ecource-new-website\\\\public\\\\products-bg.mp4')"
+      "Bash(/c/Users/97252/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.1-full_build/bin/ffmpeg.exe -y -f concat -safe 0 -i 'C:\\\\Users\\\\97252\\\\AppData\\\\Local\\\\Temp/concat.txt' -c copy 'C:\\\\Users\\\\97252\\\\OneDrive - ISC\\\\Developer\\\\Ecource new website\\\\Ecource-new-website\\\\public\\\\products-bg.mp4')",
+      "WebFetch(domain:openknowledge.fao.org)",
+      "WebFetch(domain:www.frontiersin.org)",
+      "WebFetch(domain:annals.fih.upt.ro)",
+      "WebFetch(domain:www.mdpi.com)",
+      "WebFetch(domain:www.oecd.org)",
+      "WebFetch(domain:pmc.ncbi.nlm.nih.gov)",
+      "WebFetch(domain:www.nass.usda.gov)",
+      "WebFetch(domain:www.ers.usda.gov)",
+      "WebFetch(domain:ers.usda.gov)",
+      "WebFetch(domain:www.nationalchickencouncil.org)",
+      "WebFetch(domain:ourworldindata.org)"
     ]
   }
 }
