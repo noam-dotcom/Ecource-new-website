@@ -308,7 +308,7 @@ export const translations = {
         },
         {
           name: "Avner Rot",
-          role: "Engineering & Chemistry",
+          role: "Mechanical Eng",
           bio: "Extensive experience in food industry engineering. Ensures production lines meet all technical requirements and industry standards for multi-species whole-fish processing at scale.",
           initials: "AR",
         },
@@ -718,7 +718,7 @@ export const translations = {
         },
         {
           name: "Avner Rot",
-          role: "הנדסה וכימיה",
+          role: "מהנדס מכונות",
           bio: "ניסיון נרחב בהנדסת תעשיית המזון. מבטיח שקווי הייצור עומדים בכל הדרישות הטכניות ותקני התעשייה לעיבוד דגים שלמים ממספר מינים בקנה מידה.",
           initials: "AR",
         },
@@ -1106,7 +1106,7 @@ export const translations = {
         },
         {
           name: "Avner Rot",
-          role: "首席技术官",
+          role: "机械工程师",
           bio: "Ecource专利申请中全鱼加工系统背后的首席技术架构师，在工业工程和机械设计方面拥有深厚专业知识。",
           initials: "AR",
         },
@@ -1463,7 +1463,7 @@ export const translations = {
         },
         {
           name: "Avner Rot",
-          role: "CTO",
+          role: "Ing. Mecánico",
           bio: "Arquitecto tecnológico principal detrás del sistema de procesamiento de pez entero con patente pendiente de Ecource, con profunda experiencia en ingeniería industrial.",
           initials: "AR",
         },
@@ -1860,7 +1860,7 @@ export const translations = {
         },
         {
           name: "Avner Rot",
-          role: "Ingénierie & Chimie",
+          role: "Ingénieur Mécanique",
           bio: "Vaste expérience en ingénierie dans l'industrie alimentaire. Veille à ce que les lignes de production répondent à toutes les exigences techniques et aux normes industrielles pour le traitement du poisson entier multi-espèces à grande échelle.",
           initials: "AR",
         },
