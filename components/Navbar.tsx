@@ -44,16 +44,18 @@ export default function Navbar() {
           : "bg-transparent py-5"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <a href="#hero" className="flex items-center shrink-0">
-          <img
-            src="/ecource-logo.png"
-            alt="Ecource"
-            style={{ height: "168px", width: "auto" }}
-          />
-        </a>
+      {/* Logo — absolute top-left with slogan below */}
+      <a href="#hero" style={{ position: "absolute", top: 0, left: 0, zIndex: 10 }}>
+        <img
+          src="/ecource-logo.png"
+          alt="Ecource"
+          style={{ height: "252px", width: "auto" }}
+        />
+      </a>
 
-        {/* Desktop links — Contact Us is the last link, styled as CTA */}
+      {/* Centered nav + right-side language switcher */}
+      <div className="max-w-7xl mx-auto px-6 flex items-center justify-center relative">
+        {/* Desktop links — centered */}
         <ul className="hidden xl:flex items-center gap-6">
           {links.map((l) => (
             <li key={l.href}>
@@ -71,8 +73,8 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* Right side: language switcher only */}
-        <div className="hidden xl:flex items-center">
+        {/* Language switcher — right side */}
+        <div className="hidden xl:flex items-center absolute right-6">
           <div className="flex items-center gap-1 bg-white/5 border border-white/10 rounded-lg p-1">
             {LANGUAGES.map(({ code, label }) => (
               <button
@@ -92,7 +94,7 @@ export default function Navbar() {
 
         {/* Mobile menu toggle */}
         <button
-          className="xl:hidden text-white"
+          className="xl:hidden text-white absolute right-6"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? <X size={24} /> : <Menu size={24} />}
