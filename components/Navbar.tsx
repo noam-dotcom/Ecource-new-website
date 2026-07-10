@@ -45,17 +45,12 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        {/* Logo — custom wordmark (fish in C, mirrored last C & E) + hexagon mark */}
-        <a href="#hero" className="flex items-center gap-2 shrink-0">
+        <a href="#hero" className="flex items-center shrink-0">
           <img
-            src="/ecource-wordmark.svg"
+            src="/ecource-logo.png"
             alt="Ecource"
-            className="h-9 w-auto object-contain"
-          />
-          <img
-            src="/ecource-logo-mark.svg"
-            alt=""
-            className="h-7 w-7 object-contain"
+            className="h-14 w-auto object-contain"
+            style={{ mixBlendMode: "screen" }}
           />
         </a>
 
