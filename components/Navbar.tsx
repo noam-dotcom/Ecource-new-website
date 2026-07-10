@@ -49,8 +49,7 @@ export default function Navbar() {
           <img
             src="/ecource-logo.png"
             alt="Ecource"
-            className="h-14 w-auto object-contain"
-            style={{ mixBlendMode: "screen" }}
+            style={{ height: "168px", width: "auto" }}
           />
         </a>
 
