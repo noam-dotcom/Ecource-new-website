@@ -33,7 +33,7 @@ export default function Hero() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 animate-fade-in">
           {[
             { value: "$130B+/Year", label: "Untapped Seafood Market", sub: "~65MT/Year underutilized fish biomass · FAO SOFIA 2024" },
-            { value: "80MT/Year", label: "Fish Biomass Wasted Annually", sub: "Discarded by conventional processing" },
+            { value: "60MT/Year", label: "Fin Fish Biomass Wasted Annually", sub: "Discarded by conventional processing" },
             { value: "Up to 65%", label: "Of Every Fish Discarded Today", sub: "The structural inefficiency we solve" },
             { value: "25+", label: "Years Seafood Expertise", sub: "Founder's hands-on industry experience" },
           ].map((metric) => (
